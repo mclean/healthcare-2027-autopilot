@@ -14,6 +14,8 @@ This plugin is only as useful as its facts are current and its outputs are belie
 
 ## Ground rules
 
+Everyone taking part in this project follows the [code of conduct](CODE_OF_CONDUCT.md).
+
 1. **No real data, ever.** No patient information, no real organization's financials or contract terms, no names of real people at real providers. Both sample organizations are invented, and anything added to `examples/` or `templates/` has to be invented too.
 2. **Standard library only.** The scripts have to run on locked-down machines where nobody can install packages.
 3. **Every fact has a source and a date.** Figures in `reference/` carry both. New ones need the same.

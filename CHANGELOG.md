@@ -4,6 +4,14 @@ Notable changes to this project are recorded here. The format follows [Keep a Ch
 
 ## [Unreleased]
 
+### Added
+
+- Code of conduct (Contributor Covenant 2.0).
+
+### Changed
+
+- The smoke test now uses `actions/checkout` and `actions/setup-python` v7.
+
 ## [0.1.0] - 2026-11-16
 
 First public release.
