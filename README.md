@@ -2,6 +2,10 @@
 
 **A Claude plugin that keeps a healthcare leader on track through 2027 by scheduling their AI agent to do the follow-through.** It turns the year's ten most important preparation actions into scheduled jobs (a Monday brief, a policy radar, a monthly KPI pulse, contract and deal deadline reminders, milestone checks), each running on whatever data the organization has, with a fallback for every input and a confidence grade on every number.
 
+[![smoke test](https://github.com/mclean/healthcare-2027-autopilot/actions/workflows/smoke-test.yml/badge.svg)](https://github.com/mclean/healthcare-2027-autopilot/actions/workflows/smoke-test.yml)
+[![Latest release](https://img.shields.io/github/v/release/mclean/healthcare-2027-autopilot)](https://github.com/mclean/healthcare-2027-autopilot/releases/latest)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+
 ![Weekly leader brief generated from the fictional sample organization](docs/screenshots/01-weekly-brief.png)
 
 ## Why 2027
@@ -78,9 +82,9 @@ Three design choices make it work unattended:
 /plugin install healthcare-2027-autopilot@healthcare-2027-autopilot
 ```
 
-**Claude desktop or web:** download [`dist/healthcare-2027-autopilot.plugin`](dist/healthcare-2027-autopilot.plugin) (use the download button on that page) and open it in Claude. To build it yourself: `bash scripts/build_plugin.sh`.
+**Claude desktop or web:** download `healthcare-2027-autopilot.plugin` from the [latest release](https://github.com/mclean/healthcare-2027-autopilot/releases/latest) and open it in Claude. The same file is in [`dist/`](dist/healthcare-2027-autopilot.plugin), and `bash scripts/build_plugin.sh` builds it from source.
 
-Then say: **"Set up the 2027 readiness autopilot."** Full walkthrough: [Getting started](docs/guides/01-getting-started.md).
+Then say: **"Set up the 2027 readiness autopilot."** Full walkthrough: [Getting started](docs/guides/01-getting-started.md). Updating or removing it later is covered in the [FAQ](docs/guides/07-faq-and-safety.md#how-do-i-update-the-plugin).
 
 ## See it on the sample
 
@@ -135,6 +139,10 @@ dist/               the installable .plugin file (rebuild with scripts/build_plu
 ## Limits
 
 Planning support, not legal, financial or coding advice. Facts and dates are sourced as of November 16, 2026, and `policy-radar` is there to keep them current. The agent reads, analyzes, drafts and reminds; it never sends anything to anyone but the leader or changes contracts, claims or records. Keep your workspace private; it holds financial and operational data.
+
+## Contributing and security
+
+Corrections to dates, rates and state rules are the most useful contribution. [CONTRIBUTING.md](CONTRIBUTING.md) explains how to send one, and the [policy update form](https://github.com/mclean/healthcare-2027-autopilot/issues/new?template=policy_update.yml) is the quickest route. Report security problems privately as described in [SECURITY.md](SECURITY.md). Release history is in [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 
