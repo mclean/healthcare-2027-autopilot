@@ -1,0 +1,40 @@
+{
+  "note": "Assumption register for the fictional sample. Entries here override reference/assumptions-defaults.json. Every override records who set it, when and from what.",
+  "assumptions": {
+    "medicaid_subject_share": {
+      "values": {
+        "base": 0.38,
+        "downside": 0.38,
+        "severe": 0.38
+      },
+      "kind": "sourced",
+      "source": {
+        "name": "Medicaid roster export, ages 19 to 64 excluding pregnancy and SSI plans (D02, tier B)",
+        "credibility": 4
+      },
+      "set_by": "Revenue cycle director, 2026-11-12"
+    },
+    "self_pay_collection_rate": {
+      "values": {
+        "base": 0.22,
+        "downside": 0.16,
+        "severe": 0.11
+      },
+      "kind": "assumption",
+      "set_by": "CFO estimate from 2025 self-pay recoveries, 2026-11-12"
+    },
+    "commercial_share_renewing": {
+      "values": {
+        "base": 0.42,
+        "downside": 0.42,
+        "severe": 0.42
+      },
+      "kind": "sourced",
+      "source": {
+        "name": "contract-renewal-radar, contracts.csv (D06, tier C)",
+        "credibility": 3
+      },
+      "set_by": "contract-renewal-radar, 2026-11-16"
+    }
+  }
+}

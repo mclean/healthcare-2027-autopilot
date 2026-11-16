@@ -1,0 +1,26 @@
+{
+  "note": "Maintained by policy-radar. Only changes from sources scored 4 or higher (or two sources scored 3) are logged as material. Entries below are real events; the 'so_what' lines are written for the fictional sample org.",
+  "entries": [
+    {
+      "date": "2026-11-13",
+      "headline": "CMS lets states delay work-requirement disenrollments to June 30, 2027 (hold-harmless option)",
+      "source": {"name": "Morgan Lewis", "url": "https://www.morganlewis.com/pubs/2026/11/medicaid-work-requirements-remain-on-track-despite-partial-vacatur", "credibility": 4},
+      "assumption_changes": [{"key": "hold_harmless_elected", "from": "unknown", "to": "pending per state", "status": "watching IL, IN, OR"}],
+      "so_what": "If Illinois, Indiana and Oregon elect it, coverage losses hit cash in Q3 instead of Q1. Watch for state announcements."
+    },
+    {
+      "date": "2026-11-05",
+      "headline": "Oregon, Minnesota, New Mexico and Washington sue over the work requirements",
+      "source": {"name": "Morgan Lewis", "url": "https://www.morganlewis.com/pubs/2026/11/medicaid-work-requirements-remain-on-track-despite-partial-vacatur", "credibility": 4},
+      "assumption_changes": [],
+      "so_what": "Oregon sites could see a different timeline. No change to plan dates until a court acts."
+    },
+    {
+      "date": "2026-11-04",
+      "headline": "Final 2027 physician fee schedule: conversion factor down 2.31% for most clinicians",
+      "source": {"name": "AAMC", "url": "https://www.aamc.org/advocacy-policy/washington-highlights/cms-releases-cy27-medicare-physician-fee-schedule-and-quality-payment-program-final-rule", "credibility": 4},
+      "assumption_changes": [{"key": "pfs_cf_change", "from": -0.0168, "to": -0.0231, "status": "applied"}],
+      "so_what": "Deeper than the July proposal. Downside model rerun; Medicare Advantage contracts paid off the fee schedule inherit it."
+    }
+  ]
+}

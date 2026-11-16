@@ -1,0 +1,34 @@
+# Friday action tracker close-out (Every Fri at 15:37, America/New_York)
+# GitHub cron runs in UTC. Converted from local time on 2026-11-16; daylight saving shifts it by an hour
+# for part of the year. Re-run build_schedule.py after each DST change if the exact hour matters.
+name: "autopilot: Friday action tracker close-out"
+on:
+  schedule:
+    - cron: "37 20 * * 5"
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            Run the `action-tracker` skill from the healthcare-2027-autopilot plugin for Lakeshore Community Hospital (fictional sample).
+            Readiness workspace: the readiness/ folder in this repository (profile.json, assumptions.json, inputs/, state/, outputs/).
+            Purpose of this run: Friday afternoon: update status, chase owners, flag slips while there is still a week to recover.
+            Before using any data input, check its tier in profile.json data_tiers. If the tier-A or tier-B source is missing or stale, walk the fallback chain in reference/dependencies.json, use the best available tier, and label every number with its confidence grade.
+            Write outputs to the workspace paths listed in the skill. Update state/tracker.json for any action whose status changed.
+            Deliver a short summary through: email. If nothing material changed, deliver one line saying so, or nothing if the job is marked deliver-only-if-material.
+            Never send messages to anyone other than the leader, never change payer contracts, claims or patient records, and stop to ask before any irreversible step.
+      - name: Save outputs back to the private repo
+        run: |
+          git config user.name "readiness-autopilot"
+          git config user.email "readiness-autopilot@users.noreply.github.com"
+          git add -A readiness || true
+          git diff --cached --quiet || git commit -m "autopilot: tracker-closeout run"
+          git push

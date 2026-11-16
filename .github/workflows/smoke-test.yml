@@ -1,0 +1,23 @@
+name: smoke test
+on:
+  push:
+  pull_request:
+jobs:
+  examples:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Regenerate every example output
+        run: bash scripts/run_examples.sh
+      - name: Rebuild reference guides
+        run: python3 docs/tools/build_reference_docs.py
+      - name: Fresh workspace with no data (tier D fallbacks)
+        run: |
+          python3 scripts/init_workspace.py --workspace /tmp/ws --archetype physician-group --org "CI Group" --states IL --today 2026-11-16
+          python3 scripts/data_readiness.py --workspace /tmp/ws --today 2026-11-16
+          python3 scripts/build_schedule.py --workspace /tmp/ws --today 2026-11-16
+          python3 scripts/tracker.py init --workspace /tmp/ws --today 2026-11-16
+          python3 scripts/weekly_brief.py --workspace /tmp/ws --today 2026-11-16

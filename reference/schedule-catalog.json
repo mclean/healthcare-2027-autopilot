@@ -1,0 +1,66 @@
+{
+  "as_of": "2026-11-16",
+  "note": "Default cadence for a leader. Times are local to the leader's timezone and sit off the top of the hour so shared schedulers are less likely to delay them. cadence-scheduler adjusts days and times to the leader's week and drops jobs whose skill does not apply to the archetype.",
+  "recurring": [
+    {
+      "id": "weekly-brief", "skill": "weekly-leader-brief", "name": "Weekly leader brief",
+      "cron": "47 6 * * 1", "why": "Monday morning: what needs the leader this week, before the first meeting.",
+      "needs": ["D18"], "optional": ["D01", "D07", "D15"],
+      "outputs": ["outputs/briefs/{date}-weekly-brief.md"], "deliver": true
+    },
+    {
+      "id": "policy-radar", "skill": "policy-radar", "name": "Policy radar",
+      "cron": "23 13 * * 4", "why": "Thursday afternoon: catch the week's CMS, state and congressional moves before Monday's brief.",
+      "needs": ["D15"], "optional": [],
+      "outputs": ["state/policy_log.json", "outputs/radar/{date}-policy-radar.md"], "deliver": "only_if_material"
+    },
+    {
+      "id": "tracker-closeout", "skill": "action-tracker", "name": "Friday action tracker close-out",
+      "cron": "37 15 * * 5", "why": "Friday afternoon: update status, chase owners, flag slips while there is still a week to recover.",
+      "needs": ["D18"], "optional": [],
+      "outputs": ["state/tracker.json", "outputs/tracker/{date}-tracker.html"], "deliver": "only_if_material"
+    },
+    {
+      "id": "contract-watch", "skill": "contract-renewal-radar", "name": "Contract notice-window watch",
+      "cron": "17 8 * * 2", "why": "Tuesday morning: no notice deadline passes unprepared.",
+      "needs": ["D06"], "optional": [],
+      "outputs": ["outputs/contracts/{date}-contract-radar.html"], "deliver": "only_if_material"
+    },
+    {
+      "id": "kpi-pulse", "skill": "kpi-pulse", "name": "Monthly KPI pulse",
+      "cron": "13 7 5 * *", "why": "Fifth of the month: month-end data has usually landed; triggers fire the right playbook.",
+      "needs": ["D01", "D07"], "optional": ["D08", "D09", "D10", "D14"],
+      "outputs": ["outputs/kpi/{date}-kpi-pulse.html", "state/triggers.json"], "deliver": true
+    },
+    {
+      "id": "data-readiness", "skill": "data-readiness", "name": "Monthly data readiness re-check",
+      "cron": "41 16 2 * *", "why": "Second of the month: try to upgrade every dependency one tier.",
+      "needs": [], "optional": [],
+      "outputs": ["outputs/data/{date}-data-readiness.html"], "deliver": "only_if_material"
+    },
+    {
+      "id": "vendor-check", "skill": "vendor-resilience", "name": "Monthly vendor resilience check",
+      "cron": "9 11 20 * *", "why": "Twentieth of the month: BAAs, backups and downtime tests stay current.",
+      "needs": ["D11"], "optional": [],
+      "outputs": ["outputs/vendors/{date}-vendor-check.md"], "deliver": "only_if_material"
+    },
+    {
+      "id": "coding-audit", "skill": "coding-integrity-audit", "name": "Quarterly coding integrity audit",
+      "cron": "26 10 15 1,4,7,10 *", "why": "Mid-month after each quarter closes: compare coding patterns before payers do.",
+      "needs": ["D09"], "optional": ["D10"],
+      "outputs": ["outputs/coding/{date}-coding-audit.html"], "deliver": true
+    },
+    {
+      "id": "board-update", "skill": "board-update", "name": "Quarterly board or investor update",
+      "cron": "52 9 8 1,4,7,10 *", "why": "Eighth of the month after quarter end: draft the update while numbers are fresh.",
+      "needs": ["D01"], "optional": ["D07", "D14"],
+      "outputs": ["outputs/board/{date}-board-update.md"], "deliver": true
+    }
+  ],
+  "milestone_rules": {
+    "calendar_prep": "One-shot job at (event date - lead_days) for every applicable regulatory calendar event: prepare, and confirm the date still holds.",
+    "calendar_day_of": "One-shot job on the first business day on or after the event date: confirm what happened and update assumptions.",
+    "action_checkpoint": "One-shot job 14 days before each action's due date: is it on track, what is blocking it.",
+    "action_due": "One-shot job on each action's due date: verify the done-when condition with evidence."
+  }
+}

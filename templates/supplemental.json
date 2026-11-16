@@ -1,0 +1,9 @@
+{
+  "state": "",
+  "expansion_state": true,
+  "programs": [
+    {"name": "Hospital state-directed payment", "type": "sdp", "fy2026_amount": 0, "total_payment_pct_of_medicare": 0, "base_medicaid_pct_of_medicare": 0},
+    {"name": "Provider tax-funded add-on", "type": "provider_tax", "fy2026_amount": 0, "tax_paid": 0, "state_tax_rate_pct": 0},
+    {"name": "Medicaid DSH", "type": "other", "fy2026_amount": 0}
+  ]
+}

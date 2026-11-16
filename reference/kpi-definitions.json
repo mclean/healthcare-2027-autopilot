@@ -1,0 +1,116 @@
+{
+  "as_of": "2026-11-16",
+  "note": "Thresholds are starting defaults, not benchmarks. readiness-setup asks the leader to confirm or tune them, and kpi-pulse records every change in the assumption register.",
+  "kpis": [
+    {
+      "id": "medicaid_share",
+      "name": "Medicaid share of visits",
+      "formula": "Medicaid visits / total visits",
+      "unit": "pct",
+      "direction": "watch",
+      "trigger": {"type": "delta_vs_baseline_pts", "value": -2.0, "and": {"kpi": "self_pay_share", "type": "delta_vs_baseline_pts", "value": 1.5}},
+      "meaning": "Medicaid falling while self-pay rises is the signature of coverage churn, not lost patients.",
+      "fires": ["medicaid-coverage-guard"],
+      "data": "D01"
+    },
+    {
+      "id": "self_pay_share",
+      "name": "Self-pay share of visits",
+      "formula": "Self-pay visits / total visits",
+      "unit": "pct",
+      "direction": "down_is_good",
+      "trigger": {"type": "delta_vs_baseline_pts", "value": 1.5},
+      "meaning": "Former Medicaid and exchange patients arriving uninsured.",
+      "fires": ["medicaid-coverage-guard", "point-of-service-collections"],
+      "data": "D01"
+    },
+    {
+      "id": "eligibility_denial_rate",
+      "name": "Coverage-related denial rate",
+      "formula": "Claims denied with CARC 26, 27 or 31 / claims submitted",
+      "unit": "pct",
+      "direction": "down_is_good",
+      "trigger": {"type": "above", "value": 2.0},
+      "meaning": "Eligibility checked too early, too rarely or not at all.",
+      "fires": ["medicaid-coverage-guard"],
+      "data": "D10"
+    },
+    {
+      "id": "pos_collection_rate",
+      "name": "Point-of-service collection rate",
+      "formula": "Collected at service / patient responsibility due at service",
+      "unit": "pct",
+      "direction": "up_is_good",
+      "trigger": {"type": "below", "value": 70.0},
+      "meaning": "Balances that leave the building unpaid become bad debt at a much higher rate.",
+      "fires": ["point-of-service-collections"],
+      "data": "D08"
+    },
+    {
+      "id": "bad_debt_charity_pct",
+      "name": "Bad debt plus charity, % of gross revenue",
+      "formula": "(Bad debt + charity) / gross patient revenue",
+      "unit": "pct",
+      "direction": "down_is_good",
+      "trigger": {"type": "delta_vs_baseline_pct", "value": 10.0},
+      "meaning": "The lagging confirmation of churn and collection gaps.",
+      "fires": ["point-of-service-collections", "downside-case-model"],
+      "data": "D07"
+    },
+    {
+      "id": "days_in_ar",
+      "name": "Days in A/R",
+      "formula": "Total A/R / average daily net revenue (trailing 90 days)",
+      "unit": "days",
+      "direction": "down_is_good",
+      "trigger": {"type": "delta_vs_baseline_abs", "value": 5.0},
+      "meaning": "Cash slowing before revenue falls.",
+      "fires": ["point-of-service-collections", "vendor-resilience"],
+      "data": "D07"
+    },
+    {
+      "id": "high_level_em_share",
+      "name": "Level 4 and 5 share of established E/M visits",
+      "formula": "(99214 + 99215) / (99212 + 99213 + 99214 + 99215)",
+      "unit": "pct",
+      "direction": "watch",
+      "trigger": {"type": "delta_vs_baseline_pts", "value": 5.0},
+      "meaning": "A jump after an AI documentation rollout is what payers look for. It may be legitimate; it must be explainable.",
+      "fires": ["coding-integrity-audit"],
+      "data": "D09"
+    },
+    {
+      "id": "contracts_in_window_unprepped",
+      "name": "Contracts inside their notice window without a prep file",
+      "formula": "Count of contracts where today >= prep_start and prep_status != done",
+      "unit": "count",
+      "direction": "down_is_good",
+      "trigger": {"type": "above", "value": 0},
+      "meaning": "The leverage moment is passing.",
+      "fires": ["contract-renewal-radar"],
+      "data": "D06"
+    },
+    {
+      "id": "cash_critical_vendors_untested",
+      "name": "Cash-critical vendors without a tested backup",
+      "formula": "Count where cash_critical = yes and last_tested is empty or older than 12 months",
+      "unit": "count",
+      "direction": "down_is_good",
+      "trigger": {"type": "above", "value": 0},
+      "meaning": "One outage away from a cash stoppage.",
+      "fires": ["vendor-resilience"],
+      "data": "D11"
+    },
+    {
+      "id": "agency_labor_share",
+      "name": "Agency and locum share of labor cost",
+      "formula": "Agency + locum spend / total labor cost",
+      "unit": "pct",
+      "direction": "down_is_good",
+      "trigger": {"type": "delta_vs_baseline_pts", "value": 2.0},
+      "meaning": "Shortages showing up as premium labor.",
+      "fires": ["board-update"],
+      "data": "D14"
+    }
+  ]
+}

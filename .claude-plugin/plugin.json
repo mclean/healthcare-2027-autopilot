@@ -1,0 +1,13 @@
+{
+  "name": "healthcare-2027-autopilot",
+  "version": "0.1.0",
+  "description": "Scheduled AI-agent skills that keep healthcare leaders on track through the 2027 Medicaid, Medicare, commercial payer and state law changes: setup, scheduling, a weekly brief, policy radar, KPI triggers, a downside model, contract, coverage, collections, coding, site-of-care, vendor, deal and financing playbooks, each with data fallbacks and confidence grades.",
+  "author": {
+    "name": "mclean",
+    "url": "https://github.com/mclean"
+  },
+  "homepage": "https://github.com/mclean/healthcare-2027-autopilot",
+  "repository": "https://github.com/mclean/healthcare-2027-autopilot",
+  "license": "MIT",
+  "keywords": ["healthcare", "medicaid", "medicare", "revenue-cycle", "scheduling", "cron", "readiness", "private-equity", "hospital", "physician-group"]
+}

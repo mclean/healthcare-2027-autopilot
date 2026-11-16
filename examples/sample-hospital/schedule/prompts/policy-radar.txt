@@ -1,0 +1,7 @@
+Run the `policy-radar` skill from the healthcare-2027-autopilot plugin for Lakeshore Community Hospital (fictional sample).
+Readiness workspace: examples/sample-hospital (profile.json, assumptions.json, inputs/, state/, outputs/).
+Purpose of this run: Thursday afternoon: catch the week's CMS, state and congressional moves before Monday's brief.
+Before using any data input, check its tier in profile.json data_tiers. If the tier-A or tier-B source is missing or stale, walk the fallback chain in reference/dependencies.json, use the best available tier, and label every number with its confidence grade.
+Write outputs to the workspace paths listed in the skill. Update state/tracker.json for any action whose status changed.
+Deliver a short summary through: email. If nothing material changed, deliver one line saying so, or nothing if the job is marked deliver-only-if-material.
+Never send messages to anyone other than the leader, never change payer contracts, claims or patient records, and stop to ask before any irreversible step.

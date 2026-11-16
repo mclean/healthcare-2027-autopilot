@@ -1,0 +1,10 @@
+{
+  "note": "Fictional sample. Replace with finance's supplemental payment schedule (D13).",
+  "state": "OH",
+  "expansion_state": true,
+  "programs": [
+    {"name": "Hospital state-directed payment", "type": "sdp", "fy2026_amount": 14200000, "total_payment_pct_of_medicare": 160, "base_medicaid_pct_of_medicare": 80},
+    {"name": "Provider tax-funded rate add-on (net of tax)", "type": "provider_tax", "fy2026_amount": 10900000, "tax_paid": 4100000, "state_tax_rate_pct": 6.0},
+    {"name": "Medicaid DSH (held flat; watch separately)", "type": "other", "fy2026_amount": 2300000}
+  ]
+}

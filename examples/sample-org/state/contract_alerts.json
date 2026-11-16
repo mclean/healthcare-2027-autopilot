@@ -1,0 +1,296 @@
+[
+  {
+    "id": "contract-payer-b-regional-blues-30d",
+    "type": "once",
+    "at": "2026-12-03",
+    "time": "08:21",
+    "skill": "contract-renewal-radar",
+    "name": "Payer B (regional Blues): notice deadline in 30 days",
+    "why": "Payer B (regional Blues) (commercial) notice deadline 2027-01-02 for renewal 2027-07-01. Confirm the decision: renegotiate, renew or give notice.",
+    "deliver": true,
+    "needs": [
+      "D06"
+    ],
+    "outputs": []
+  },
+  {
+    "id": "contract-payer-e-workers-comp-network-180d",
+    "type": "once",
+    "at": "2027-02-03",
+    "time": "08:21",
+    "skill": "contract-renewal-radar",
+    "name": "Payer E (workers comp network): notice deadline in 180 days",
+    "why": "Payer E (workers comp network) (workers_comp) notice deadline 2027-08-02 for renewal 2027-10-01. Start the negotiation prep pack.",
+    "deliver": true,
+    "needs": [
+      "D06"
+    ],
+    "outputs": []
+  },
+  {
+    "id": "contract-payer-e-workers-comp-network-120d",
+    "type": "once",
+    "at": "2027-04-04",
+    "time": "08:21",
+    "skill": "contract-renewal-radar",
+    "name": "Payer E (workers comp network): notice deadline in 120 days",
+    "why": "Payer E (workers comp network) (workers_comp) notice deadline 2027-08-02 for renewal 2027-10-01. Start the negotiation prep pack.",
+    "deliver": true,
+    "needs": [
+      "D06"
+    ],
+    "outputs": []
+  },
+  {
+    "id": "contract-payer-e-workers-comp-network-90d",
+    "type": "once",
+    "at": "2027-05-04",
+    "time": "08:21",
+    "skill": "contract-renewal-radar",
+    "name": "Payer E (workers comp network): notice deadline in 90 days",
+    "why": "Payer E (workers comp network) (workers_comp) notice deadline 2027-08-02 for renewal 2027-10-01. Start the negotiation prep pack.",
+    "deliver": true,
+    "needs": [
+      "D06"
+    ],
+    "outputs": []
+  },
+  {
+    "id": "contract-payer-e-workers-comp-network-60d",
+    "type": "once",
+    "at": "2027-06-03",
+    "time": "08:21",
+    "skill": "contract-renewal-radar",
+    "name": "Payer E (workers comp network): notice deadline in 60 days",
+    "why": "Payer E (workers comp network) (workers_comp) notice deadline 2027-08-02 for renewal 2027-10-01. Confirm the decision: renegotiate, renew or give notice.",
+    "deliver": true,
+    "needs": [
+      "D06"
+    ],
+    "outputs": []
+  },
+  {
+    "id": "contract-payer-e-workers-comp-network-30d",
+    "type": "once",
+    "at": "2027-07-03",
+    "time": "08:21",
+    "skill": "contract-renewal-radar",
+    "name": "Payer E (workers comp network): notice deadline in 30 days",
+    "why": "Payer E (workers comp network) (workers_comp) notice deadline 2027-08-02 for renewal 2027-10-01. Confirm the decision: renegotiate, renew or give notice.",
+    "deliver": true,
+    "needs": [
+      "D06"
+    ],
+    "outputs": []
+  },
+  {
+    "id": "contract-payer-g-regional-hmo-180d",
+    "type": "once",
+    "at": "2027-02-04",
+    "time": "08:21",
+    "skill": "contract-renewal-radar",
+    "name": "Payer G (regional HMO): notice deadline in 180 days",
+    "why": "Payer G (regional HMO) (commercial) notice deadline 2027-08-03 for renewal 2027-11-01. Start the negotiation prep pack.",
+    "deliver": true,
+    "needs": [
+      "D06"
+    ],
+    "outputs": []
+  },
+  {
+    "id": "contract-payer-g-regional-hmo-120d",
+    "type": "once",
+    "at": "2027-04-05",
+    "time": "08:21",
+    "skill": "contract-renewal-radar",
+    "name": "Payer G (regional HMO): notice deadline in 120 days",
+    "why": "Payer G (regional HMO) (commercial) notice deadline 2027-08-03 for renewal 2027-11-01. Start the negotiation prep pack.",
+    "deliver": true,
+    "needs": [
+      "D06"
+    ],
+    "outputs": []
+  },
+  {
+    "id": "contract-payer-g-regional-hmo-90d",
+    "type": "once",
+    "at": "2027-05-05",
+    "time": "08:21",
+    "skill": "contract-renewal-radar",
+    "name": "Payer G (regional HMO): notice deadline in 90 days",
+    "why": "Payer G (regional HMO) (commercial) notice deadline 2027-08-03 for renewal 2027-11-01. Start the negotiation prep pack.",
+    "deliver": true,
+    "needs": [
+      "D06"
+    ],
+    "outputs": []
+  },
+  {
+    "id": "contract-payer-g-regional-hmo-60d",
+    "type": "once",
+    "at": "2027-06-04",
+    "time": "08:21",
+    "skill": "contract-renewal-radar",
+    "name": "Payer G (regional HMO): notice deadline in 60 days",
+    "why": "Payer G (regional HMO) (commercial) notice deadline 2027-08-03 for renewal 2027-11-01. Confirm the decision: renegotiate, renew or give notice.",
+    "deliver": true,
+    "needs": [
+      "D06"
+    ],
+    "outputs": []
+  },
+  {
+    "id": "contract-payer-g-regional-hmo-30d",
+    "type": "once",
+    "at": "2027-07-04",
+    "time": "08:21",
+    "skill": "contract-renewal-radar",
+    "name": "Payer G (regional HMO): notice deadline in 30 days",
+    "why": "Payer G (regional HMO) (commercial) notice deadline 2027-08-03 for renewal 2027-11-01. Confirm the decision: renegotiate, renew or give notice.",
+    "deliver": true,
+    "needs": [
+      "D06"
+    ],
+    "outputs": []
+  },
+  {
+    "id": "contract-payer-a-national-ppo-180d",
+    "type": "once",
+    "at": "2027-06-06",
+    "time": "08:21",
+    "skill": "contract-renewal-radar",
+    "name": "Payer A (national PPO): notice deadline in 180 days",
+    "why": "Payer A (national PPO) (commercial) notice deadline 2027-12-03 for renewal 2028-04-01. Start the negotiation prep pack.",
+    "deliver": true,
+    "needs": [
+      "D06"
+    ],
+    "outputs": []
+  },
+  {
+    "id": "contract-payer-a-national-ppo-120d",
+    "type": "once",
+    "at": "2027-08-05",
+    "time": "08:21",
+    "skill": "contract-renewal-radar",
+    "name": "Payer A (national PPO): notice deadline in 120 days",
+    "why": "Payer A (national PPO) (commercial) notice deadline 2027-12-03 for renewal 2028-04-01. Start the negotiation prep pack.",
+    "deliver": true,
+    "needs": [
+      "D06"
+    ],
+    "outputs": []
+  },
+  {
+    "id": "contract-payer-a-national-ppo-90d",
+    "type": "once",
+    "at": "2027-09-04",
+    "time": "08:21",
+    "skill": "contract-renewal-radar",
+    "name": "Payer A (national PPO): notice deadline in 90 days",
+    "why": "Payer A (national PPO) (commercial) notice deadline 2027-12-03 for renewal 2028-04-01. Start the negotiation prep pack.",
+    "deliver": true,
+    "needs": [
+      "D06"
+    ],
+    "outputs": []
+  },
+  {
+    "id": "contract-payer-a-national-ppo-60d",
+    "type": "once",
+    "at": "2027-10-04",
+    "time": "08:21",
+    "skill": "contract-renewal-radar",
+    "name": "Payer A (national PPO): notice deadline in 60 days",
+    "why": "Payer A (national PPO) (commercial) notice deadline 2027-12-03 for renewal 2028-04-01. Confirm the decision: renegotiate, renew or give notice.",
+    "deliver": true,
+    "needs": [
+      "D06"
+    ],
+    "outputs": []
+  },
+  {
+    "id": "contract-payer-a-national-ppo-30d",
+    "type": "once",
+    "at": "2027-11-03",
+    "time": "08:21",
+    "skill": "contract-renewal-radar",
+    "name": "Payer A (national PPO): notice deadline in 30 days",
+    "why": "Payer A (national PPO) (commercial) notice deadline 2027-12-03 for renewal 2028-04-01. Confirm the decision: renegotiate, renew or give notice.",
+    "deliver": true,
+    "needs": [
+      "D06"
+    ],
+    "outputs": []
+  },
+  {
+    "id": "contract-payer-f-medicaid-managed-care-180d",
+    "type": "once",
+    "at": "2027-09-05",
+    "time": "08:21",
+    "skill": "contract-renewal-radar",
+    "name": "Payer F (Medicaid managed care): notice deadline in 180 days",
+    "why": "Payer F (Medicaid managed care) (medicaid_mco) notice deadline 2028-03-03 for renewal 2028-06-01. Start the negotiation prep pack.",
+    "deliver": true,
+    "needs": [
+      "D06"
+    ],
+    "outputs": []
+  },
+  {
+    "id": "contract-payer-f-medicaid-managed-care-120d",
+    "type": "once",
+    "at": "2027-11-04",
+    "time": "08:21",
+    "skill": "contract-renewal-radar",
+    "name": "Payer F (Medicaid managed care): notice deadline in 120 days",
+    "why": "Payer F (Medicaid managed care) (medicaid_mco) notice deadline 2028-03-03 for renewal 2028-06-01. Start the negotiation prep pack.",
+    "deliver": true,
+    "needs": [
+      "D06"
+    ],
+    "outputs": []
+  },
+  {
+    "id": "contract-payer-f-medicaid-managed-care-90d",
+    "type": "once",
+    "at": "2027-12-04",
+    "time": "08:21",
+    "skill": "contract-renewal-radar",
+    "name": "Payer F (Medicaid managed care): notice deadline in 90 days",
+    "why": "Payer F (Medicaid managed care) (medicaid_mco) notice deadline 2028-03-03 for renewal 2028-06-01. Start the negotiation prep pack.",
+    "deliver": true,
+    "needs": [
+      "D06"
+    ],
+    "outputs": []
+  },
+  {
+    "id": "contract-payer-f-medicaid-managed-care-60d",
+    "type": "once",
+    "at": "2028-01-03",
+    "time": "08:21",
+    "skill": "contract-renewal-radar",
+    "name": "Payer F (Medicaid managed care): notice deadline in 60 days",
+    "why": "Payer F (Medicaid managed care) (medicaid_mco) notice deadline 2028-03-03 for renewal 2028-06-01. Confirm the decision: renegotiate, renew or give notice.",
+    "deliver": true,
+    "needs": [
+      "D06"
+    ],
+    "outputs": []
+  },
+  {
+    "id": "contract-payer-f-medicaid-managed-care-30d",
+    "type": "once",
+    "at": "2028-02-02",
+    "time": "08:21",
+    "skill": "contract-renewal-radar",
+    "name": "Payer F (Medicaid managed care): notice deadline in 30 days",
+    "why": "Payer F (Medicaid managed care) (medicaid_mco) notice deadline 2028-03-03 for renewal 2028-06-01. Confirm the decision: renegotiate, renew or give notice.",
+    "deliver": true,
+    "needs": [
+      "D06"
+    ],
+    "outputs": []
+  }
+]

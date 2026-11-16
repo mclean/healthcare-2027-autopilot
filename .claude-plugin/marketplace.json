@@ -1,0 +1,14 @@
+{
+  "name": "healthcare-2027-autopilot",
+  "owner": {
+    "name": "mclean"
+  },
+  "plugins": [
+    {
+      "name": "healthcare-2027-autopilot",
+      "source": "./",
+      "description": "Scheduled AI-agent skills that keep healthcare leaders on track through the 2027 payer and policy changes, with data fallbacks.",
+      "version": "0.1.0"
+    }
+  ]
+}

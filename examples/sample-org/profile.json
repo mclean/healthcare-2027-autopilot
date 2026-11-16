@@ -1,0 +1,71 @@
+{
+  "org_name": "Prairie Ridge Specialty Partners (fictional sample)",
+  "archetype": "platform-mso",
+  "description": "Fictional MSO-supported orthopedic, spine and pain platform: 42 clinicians, 9 sites in Illinois, Indiana and Oregon. All numbers are invented for demonstration.",
+  "leader": {
+    "role": "CEO",
+    "timezone": "America/Chicago"
+  },
+  "states": [
+    "IL",
+    "IN",
+    "OR"
+  ],
+  "bills_medicare_part_b": true,
+  "hospital_outpatient": false,
+  "receives_supplemental_payments": false,
+  "apm_qualifying": false,
+  "financials": {
+    "net_revenue_2026": 84000000,
+    "operating_expense_2026": 75600000,
+    "cash_on_hand": 9800000,
+    "fiscal_year_end": "12-31"
+  },
+  "deal_pipeline": [
+    {
+      "name": "Project Cedar (sample)",
+      "type": "acquisition",
+      "states": [
+        "OR"
+      ],
+      "target_close": "2027-05-15",
+      "target_assets": 12000000
+    },
+    {
+      "name": "Project Birch (sample)",
+      "type": "acquisition",
+      "states": [
+        "IN"
+      ],
+      "target_close": "2027-03-31",
+      "target_assets": 18000000
+    }
+  ],
+  "data_tiers": {
+    "D01": "B",
+    "D02": "B",
+    "D03": "C",
+    "D04": "B",
+    "D05": "D",
+    "D06": "C",
+    "D07": "B",
+    "D08": "C",
+    "D09": "B",
+    "D10": "B",
+    "D11": "C",
+    "D12": "B",
+    "D13": "D",
+    "D14": "C",
+    "D15": "A",
+    "D16": "B",
+    "D17": "B",
+    "D18": "A"
+  },
+  "infrastructure": {
+    "scheduler": "claude-scheduled-tasks",
+    "state_store": "connected-folder",
+    "state_store_label": "the connected folder 'Readiness 2027'",
+    "delivery": "email to the leader through the connected mail app, falling back to a markdown file in outputs/briefs/"
+  },
+  "kpi_baseline_period": "2026-06"
+}

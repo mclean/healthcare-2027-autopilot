@@ -1,0 +1,14 @@
+{
+  "org_name": "Lakeshore Community Hospital (fictional sample)",
+  "archetype": "community-hospital",
+  "description": "Fictional 168-bed community hospital in an expansion state. All numbers are invented for demonstration.",
+  "leader": {"role": "CFO", "timezone": "America/New_York"},
+  "states": ["OH"],
+  "bills_medicare_part_b": true,
+  "hospital_outpatient": true,
+  "receives_supplemental_payments": true,
+  "financials": {"net_revenue_2026": 312000000, "operating_expense_2026": 304000000, "cash_on_hand": 96000000},
+  "data_tiers": {"D01": "A", "D02": "B", "D03": "B", "D04": "A", "D05": "A", "D06": "B", "D07": "A", "D08": "B", "D09": "B",
+                 "D10": "A", "D11": "B", "D12": "B", "D13": "B", "D14": "A", "D15": "A", "D16": "A", "D17": "A", "D18": "A"},
+  "infrastructure": {"scheduler": "claude-scheduled-tasks", "state_store": "cloud-drive", "delivery": "email"}
+}

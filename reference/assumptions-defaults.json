@@ -1,0 +1,155 @@
+{
+  "as_of": "2026-11-16",
+  "note": "Starting assumptions for downside-case-model. 'kind' is 'sourced' (a published figure) or 'assumption' (a placeholder the leader must confirm). readiness-setup copies this file to the workspace as assumptions.json, which becomes the assumption register that policy-radar and the leader update over time.",
+  "scenarios": [
+    "base",
+    "downside",
+    "severe"
+  ],
+  "assumptions": {
+    "pfs_cf_change": {
+      "label": "Medicare physician fee schedule conversion factor change, 2027",
+      "values": {
+        "base": -0.0231,
+        "downside": -0.0231,
+        "severe": -0.0231
+      },
+      "kind": "sourced",
+      "source": {
+        "name": "AAMC, final CY2027 PFS",
+        "url": "https://www.aamc.org/advocacy-policy/washington-highlights/cms-releases-cy27-medicare-physician-fee-schedule-and-quality-payment-program-final-rule",
+        "credibility": 4
+      },
+      "note": "-2.31% for non-qualifying APM clinicians; use -1.83% for qualifying APM participants. A year-end congressional fix would change this; policy-radar watches for it."
+    },
+    "ma_share_tied_to_pfs": {
+      "label": "Share of Medicare Advantage revenue paid as a percent of the Medicare fee schedule",
+      "values": {
+        "base": 0.6,
+        "downside": 0.8,
+        "severe": 1.0
+      },
+      "kind": "assumption",
+      "note": "Check MA contracts. Many pay a percent of Medicare, so fee schedule cuts flow through."
+    },
+    "medicaid_subject_share": {
+      "label": "Share of Medicaid revenue from adults subject to work requirements",
+      "values": {
+        "base": 0.3,
+        "downside": 0.3,
+        "severe": 0.3
+      },
+      "kind": "sourced",
+      "source": {
+        "name": "Morgan Lewis (about 30% of beneficiaries subject)",
+        "url": "https://www.morganlewis.com/pubs/2026/11/medicaid-work-requirements-remain-on-track-despite-partial-vacatur",
+        "credibility": 4
+      },
+      "note": "Replace with the expansion-adult share from D02 as soon as a roster exists. Set to 0 in the seven states not subject."
+    },
+    "medicaid_disenroll_rate": {
+      "label": "Share of subject adults who lose coverage during 2027",
+      "values": {
+        "base": 0.1,
+        "downside": 0.2,
+        "severe": 0.29
+      },
+      "kind": "assumption",
+      "note": "Severe anchors on CBO's full-implementation ratio: about 5.3 million uninsured by 2034 from work requirements out of roughly 18.5 million adults subject (Georgetown CCF summaries of CBO). 2027 losses should run below that. Leader must confirm."
+    },
+    "hold_harmless_elected": {
+      "label": "State elected the CMS hold-harmless period (disenrollments start July 2027)",
+      "values": {
+        "base": true,
+        "downside": false,
+        "severe": false
+      },
+      "kind": "assumption",
+      "note": "policy-radar updates this per state as elections are announced."
+    },
+    "exchange_volume_loss": {
+      "label": "Drop in exchange (ACA marketplace) patient volume",
+      "values": {
+        "base": 0.1,
+        "downside": 0.15,
+        "severe": 0.2
+      },
+      "kind": "sourced",
+      "source": {
+        "name": "HFMA citing HCA (15% to 20% drop in ACA volumes)",
+        "url": "https://www.hfma.org/payment-reimbursement-and-managed-care/aca-enhanced-subsidies-hospital-financial-risk/",
+        "credibility": 4
+      },
+      "note": "HCA's projection for its own exchange volumes. Base sits below that range for organizations with little exchange exposure."
+    },
+    "exchange_losers_uninsured": {
+      "label": "Share of exchange patients losing coverage who become uninsured",
+      "values": {
+        "base": 0.8,
+        "downside": 0.825,
+        "severe": 0.85
+      },
+      "kind": "sourced",
+      "source": {
+        "name": "HFMA citing HCA (80% to 85%)",
+        "url": "https://www.hfma.org/payment-reimbursement-and-managed-care/aca-enhanced-subsidies-hospital-financial-risk/",
+        "credibility": 4
+      }
+    },
+    "uninsured_utilization_drop": {
+      "label": "Drop in use of care after losing coverage",
+      "values": {
+        "base": 0.3,
+        "downside": 0.3,
+        "severe": 0.35
+      },
+      "kind": "sourced",
+      "source": {
+        "name": "HFMA citing HCA (about 30%)",
+        "url": "https://www.hfma.org/payment-reimbursement-and-managed-care/aca-enhanced-subsidies-hospital-financial-risk/",
+        "credibility": 4
+      },
+      "note": "HCA's figure is for exchange enrollees; applying it to Medicaid losses is an assumption."
+    },
+    "self_pay_collection_rate": {
+      "label": "Share of self-pay billings eventually collected",
+      "values": {
+        "base": 0.2,
+        "downside": 0.15,
+        "severe": 0.1
+      },
+      "kind": "assumption",
+      "note": "Replace with the organization's own self-pay recovery from D07."
+    },
+    "commercial_share_renewing": {
+      "label": "Share of commercial revenue under contracts renewing in 2027",
+      "values": {
+        "base": 0.4,
+        "downside": 0.4,
+        "severe": 0.4
+      },
+      "kind": "assumption",
+      "note": "contract-renewal-radar replaces this with the real figure."
+    },
+    "commercial_renewal_change": {
+      "label": "Average rate change on 2027 commercial renewals",
+      "values": {
+        "base": 0.03,
+        "downside": 0.0,
+        "severe": -0.02
+      },
+      "kind": "assumption",
+      "note": "Employers expect 8.2% benefit cost growth in 2027 (Marsh) and 59% plan cost-cutting changes, so payers will push. Applied for half the year on average."
+    },
+    "opex_growth": {
+      "label": "Operating expense growth, 2027",
+      "values": {
+        "base": 0.04,
+        "downside": 0.05,
+        "severe": 0.06
+      },
+      "kind": "assumption",
+      "note": "Kaufman Hall reports hospital total expenses up 21% over three years; physician practices vary. Replace with the budget."
+    }
+  }
+}

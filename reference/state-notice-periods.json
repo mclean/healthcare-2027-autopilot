@@ -1,0 +1,19 @@
+{
+  "as_of": "2026-11-16",
+  "note": "Pre-closing notice periods used by deal_timeline.py. 'days' is from the cited source. Where the source gives no fixed period, 'days' is null and the script applies a conservative placeholder that counsel must replace. Not legal advice.",
+  "placeholder_days": 180,
+  "states": {
+    "WA": {"days": 60, "rule": "HB 2548: 60-day notice; AG information requests delay closing to 30 days after substantial compliance", "source": "PESP 2026"},
+    "IN": {"days": 90, "rule": "AG notice at least 90 days before closing when a party has at least $10M in total assets; include HSR filing", "threshold": "party with >= $10M assets", "source": "McDermott 2026"},
+    "RI": {"days": 60, "rule": "AG pre-merger notice for medical practice groups and MSOs", "source": "PESP 2026"},
+    "ME": {"days": 180, "rule": "LD 2201: 180 days' notice to DHHS for PE, hedge fund and qualifying MSO transactions over $100M in assets, among other triggers", "threshold": ">$100M assets, among other triggers", "source": "PESP 2026"},
+    "MN": {"days": 60, "rule": "Comprehensive review with a 60-day period above $80M trailing revenue; streamlined notice from $10M to $80M", "threshold": ">$80M revenue for comprehensive review", "source": "McDermott 2026"},
+    "OR": {"days": null, "rule": "Health Care Market Oversight: detailed pre-closing application, public materials, conditional approvals up to five years; SB 951 limits MSO control", "source": "McDermott 2026; PESP 2026"},
+    "CA": {"days": null, "rule": "OHCA material change notice with possible cost and market-impact review; parallel HSR notice to AG from Jan 1, 2027", "source": "McDermott 2026"},
+    "MA": {"days": null, "rule": "Material change notice to the Health Policy Commission, now covering PE investments and sale-leasebacks", "source": "McDermott 2026"},
+    "CT": {"days": null, "rule": "Material change notice to AG and Office of Health Strategy; review can extend past closing", "source": "McDermott 2026"},
+    "IL": {"days": null, "rule": "HB 5000 notice covering transactions above the facility level, including PE, effective Jan 1, 2027", "source": "PESP 2026"},
+    "NY": {"days": null, "rule": "Existing material transaction notice; 2026 proposals would expand review and post-closing reporting", "source": "McDermott 2026"},
+    "VT": {"days": null, "rule": "H.583 ownership reporting (due Mar 1, 2027) and limits on interference with clinical decisions", "source": "PESP 2026"}
+  }
+}

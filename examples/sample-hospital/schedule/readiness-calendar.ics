@@ -1,0 +1,626 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//healthcare-2027-autopilot//schedule//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:2027 Readiness Autopilot
+BEGIN:VEVENT
+UID:board-update@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20261208T095200
+DURATION:PT15M
+SUMMARY:Quarterly board or investor update
+DESCRIPTION:Ask your agent: run the board-update skill (healthcare-2027-autopilot). Eighth of the month after quarter end: draft the update while numbers are fresh.
+RRULE:FREQ=MONTHLY;BYMONTHDAY=8;BYMONTH=1,4,7,10
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quarterly board or investor update
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:coding-audit@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20261215T102600
+DURATION:PT15M
+SUMMARY:Quarterly coding integrity audit
+DESCRIPTION:Ask your agent: run the coding-integrity-audit skill (healthcare-2027-autopilot). Mid-month after each quarter closes: compare coding patterns before payers do.
+RRULE:FREQ=MONTHLY;BYMONTHDAY=15;BYMONTH=1,4,7,10
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quarterly coding integrity audit
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:contract-watch@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20261117T081700
+DURATION:PT15M
+SUMMARY:Contract notice-window watch
+DESCRIPTION:Ask your agent: run the contract-renewal-radar skill (healthcare-2027-autopilot). Tuesday morning: no notice deadline passes unprepared.
+RRULE:FREQ=WEEKLY;BYDAY=TU
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Contract notice-window watch
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:data-readiness@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20261202T164100
+DURATION:PT15M
+SUMMARY:Monthly data readiness re-check
+DESCRIPTION:Ask your agent: run the data-readiness skill (healthcare-2027-autopilot). Second of the month: try to upgrade every dependency one tier.
+RRULE:FREQ=MONTHLY;BYMONTHDAY=2
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Monthly data readiness re-check
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:kpi-pulse@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20261205T071300
+DURATION:PT15M
+SUMMARY:Monthly KPI pulse
+DESCRIPTION:Ask your agent: run the kpi-pulse skill (healthcare-2027-autopilot). Fifth of the month: month-end data has usually landed\; triggers fire the right playbook.
+RRULE:FREQ=MONTHLY;BYMONTHDAY=5
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Monthly KPI pulse
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:policy-radar@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20261119T132300
+DURATION:PT15M
+SUMMARY:Policy radar
+DESCRIPTION:Ask your agent: run the policy-radar skill (healthcare-2027-autopilot). Thursday afternoon: catch the week's CMS\, state and congressional moves before Monday's brief.
+RRULE:FREQ=WEEKLY;BYDAY=TH
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Policy radar
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tracker-closeout@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20261120T153700
+DURATION:PT15M
+SUMMARY:Friday action tracker close-out
+DESCRIPTION:Ask your agent: run the action-tracker skill (healthcare-2027-autopilot). Friday afternoon: update status\, chase owners\, flag slips while there is still a week to recover.
+RRULE:FREQ=WEEKLY;BYDAY=FR
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Friday action tracker close-out
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vendor-check@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20261120T110900
+DURATION:PT15M
+SUMMARY:Monthly vendor resilience check
+DESCRIPTION:Ask your agent: run the vendor-resilience skill (healthcare-2027-autopilot). Twentieth of the month: BAAs\, backups and downtime tests stay current.
+RRULE:FREQ=MONTHLY;BYMONTHDAY=20
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Monthly vendor resilience check
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:weekly-brief@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20261116T064700
+DURATION:PT15M
+SUMMARY:Weekly leader brief
+DESCRIPTION:Ask your agent: run the weekly-leader-brief skill (healthcare-2027-autopilot). Monday morning: what needs the leader this week\, before the first meeting.
+RRULE:FREQ=WEEKLY;BYDAY=MO
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Weekly leader brief
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:A00-checkpoint@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20261116T080300
+DURATION:PT15M
+SUMMARY:A00 checkpoint: Set up the readiness program: profile\, data tiers\, schedule
+DESCRIPTION:Ask your agent: run the action-tracker skill (healthcare-2027-autopilot). Two weeks out: Set up the readiness program: profile\, data tiers\, schedule.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:A00 checkpoint: Set up the readiness program: profile\, data tiers\, schedule
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:medicaid-work-requirements-prep@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20261117T073100
+DURATION:PT15M
+SUMMARY:Prep: Medicaid work requirements begin in 44 states
+DESCRIPTION:Ask your agent: run the medicaid-coverage-guard skill (healthcare-2027-autopilot). Prepare for: Medicaid work requirements begin in 44 states. Expansion adults ages 19 to 64 must report 80 hours a month of qualifying activity. About 30% of Medicaid beneficiaries are subject. Excluded states: WY\, TX\, KS\, MS\, AL\, FL\, SC.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Prep: Medicaid work requirements begin in 44 states
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:six-month-redeterminations-prep@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20261117T073100
+DURATION:PT15M
+SUMMARY:Prep: Six-month eligibility renewals for expansion adults
+DESCRIPTION:Ask your agent: run the medicaid-coverage-guard skill (healthcare-2027-autopilot). Prepare for: Six-month eligibility renewals for expansion adults. Expansion adults are redetermined every six months instead of annually\, doubling the number of points where coverage can lapse.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Prep: Six-month eligibility renewals for expansion adults
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:A00-due@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20261130T080300
+DURATION:PT15M
+SUMMARY:A00 due: Set up the readiness program: profile\, data tiers\, schedule
+DESCRIPTION:Ask your agent: run the readiness-setup skill (healthcare-2027-autopilot). Due today: Set up the readiness program: profile\, data tiers\, schedule.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:A00 due: Set up the readiness program: profile\, data tiers\, schedule
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hold-harmless-window-prep@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20261202T073100
+DURATION:PT15M
+SUMMARY:Prep: Optional CMS hold-harmless period on work-requirement disenrollments
+DESCRIPTION:Ask your agent: run the downside-case-model skill (healthcare-2027-autopilot). Prepare for: Optional CMS hold-harmless period on work-requirement disenrollments. States that elect it must still assess compliance from January 1 but cannot deny or disenroll solely for failing the requirement until June 30\, 2027. Which states elect it changes when coverage losses hit cash.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Prep: Optional CMS hold-harmless period on work-requirement disenrollments
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:A01-checkpoint@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20261217T080300
+DURATION:PT15M
+SUMMARY:A01 checkpoint: Run a 2027 downside case by payer
+DESCRIPTION:Ask your agent: run the action-tracker skill (healthcare-2027-autopilot). Two weeks out: Run a 2027 downside case by payer.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:A01 checkpoint: Run a 2027 downside case by payer
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:A02-checkpoint@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20261217T080300
+DURATION:PT15M
+SUMMARY:A02 checkpoint: List every commercial contract renewing in 2027 with escalator and notice dates
+DESCRIPTION:Ask your agent: run the action-tracker skill (healthcare-2027-autopilot). Two weeks out: List every commercial contract renewing in 2027 with escalator and notice dates.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:A02 checkpoint: List every commercial contract renewing in 2027 with escalator and notice dates
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:A03-checkpoint@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20261218T080300
+DURATION:PT15M
+SUMMARY:A03 checkpoint: Re-verify eligibility at every visit and flag expansion adults due for six-month renewal
+DESCRIPTION:Ask your agent: run the action-tracker skill (healthcare-2027-autopilot). Two weeks out: Re-verify eligibility at every visit and flag expansion adults due for six-month renewal.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:A03 checkpoint: Re-verify eligibility at every visit and flag expansion adults due for six-month renewal
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:A01-due@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20261231T080300
+DURATION:PT15M
+SUMMARY:A01 due: Run a 2027 downside case by payer
+DESCRIPTION:Ask your agent: run the downside-case-model skill (healthcare-2027-autopilot). Due today: Run a 2027 downside case by payer.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:A01 due: Run a 2027 downside case by payer
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:A02-due@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20261231T080300
+DURATION:PT15M
+SUMMARY:A02 due: List every commercial contract renewing in 2027 with escalator and notice dates
+DESCRIPTION:Ask your agent: run the contract-renewal-radar skill (healthcare-2027-autopilot). Due today: List every commercial contract renewing in 2027 with escalator and notice dates.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:A02 due: List every commercial contract renewing in 2027 with escalator and notice dates
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:A03-due@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20270101T080300
+DURATION:PT15M
+SUMMARY:A03 due: Re-verify eligibility at every visit and flag expansion adults due for six-month renewal
+DESCRIPTION:Ask your agent: run the medicaid-coverage-guard skill (healthcare-2027-autopilot). Due today: Re-verify eligibility at every visit and flag expansion adults due for six-month renewal.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:A03 due: Re-verify eligibility at every visit and flag expansion adults due for six-month renewal
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hold-harmless-window-day-of@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20270101T073100
+DURATION:PT15M
+SUMMARY:Day of: Optional CMS hold-harmless period on work-requirement disenrollments
+DESCRIPTION:Ask your agent: run the policy-radar skill (healthcare-2027-autopilot). Confirm what happened: Optional CMS hold-harmless period on work-requirement disenrollments\, and update assumptions and the tracker.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Day of: Optional CMS hold-harmless period on work-requirement disenrollments
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:medicaid-work-requirements-day-of@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20270101T073100
+DURATION:PT15M
+SUMMARY:Day of: Medicaid work requirements begin in 44 states
+DESCRIPTION:Ask your agent: run the policy-radar skill (healthcare-2027-autopilot). Confirm what happened: Medicaid work requirements begin in 44 states\, and update assumptions and the tracker.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Day of: Medicaid work requirements begin in 44 states
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:opps-2027-day-of@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20270101T073100
+DURATION:PT15M
+SUMMARY:Day of: 2027 outpatient (OPPS/ASC) rule takes effect
+DESCRIPTION:Ask your agent: run the policy-radar skill (healthcare-2027-autopilot). Confirm what happened: 2027 outpatient (OPPS/ASC) rule takes effect\, and update assumptions and the tracker.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Day of: 2027 outpatient (OPPS/ASC) rule takes effect
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pfs-2027-day-of@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20270101T073100
+DURATION:PT15M
+SUMMARY:Day of: 2027 Medicare physician fee schedule takes effect
+DESCRIPTION:Ask your agent: run the policy-radar skill (healthcare-2027-autopilot). Confirm what happened: 2027 Medicare physician fee schedule takes effect\, and update assumptions and the tracker.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Day of: 2027 Medicare physician fee schedule takes effect
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:six-month-redeterminations-day-of@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20270101T073100
+DURATION:PT15M
+SUMMARY:Day of: Six-month eligibility renewals for expansion adults
+DESCRIPTION:Ask your agent: run the policy-radar skill (healthcare-2027-autopilot). Confirm what happened: Six-month eligibility renewals for expansion adults\, and update assumptions and the tracker.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Day of: Six-month eligibility renewals for expansion adults
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:A04-checkpoint@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20270115T080300
+DURATION:PT15M
+SUMMARY:A04 checkpoint: Give price estimates\, collect at time of service\, offer payment plans
+DESCRIPTION:Ask your agent: run the action-tracker skill (healthcare-2027-autopilot). Two weeks out: Give price estimates\, collect at time of service\, offer payment plans.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:A04 checkpoint: Give price estimates\, collect at time of service\, offer payment plans
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:A04-due@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20270129T080300
+DURATION:PT15M
+SUMMARY:A04 due: Give price estimates\, collect at time of service\, offer payment plans
+DESCRIPTION:Ask your agent: run the point-of-service-collections skill (healthcare-2027-autopilot). Due today: Give price estimates\, collect at time of service\, offer payment plans.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:A04 due: Give price estimates\, collect at time of service\, offer payment plans
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:A05-checkpoint@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20270317T080300
+DURATION:PT15M
+SUMMARY:A05 checkpoint: Help Medicaid patients document work hours and exemptions
+DESCRIPTION:Ask your agent: run the action-tracker skill (healthcare-2027-autopilot). Two weeks out: Help Medicaid patients document work hours and exemptions.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:A05 checkpoint: Help Medicaid patients document work hours and exemptions
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:A06-checkpoint@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20270317T080300
+DURATION:PT15M
+SUMMARY:A06 checkpoint: Audit AI-assisted coding before payers do
+DESCRIPTION:Ask your agent: run the action-tracker skill (healthcare-2027-autopilot). Two weeks out: Audit AI-assisted coding before payers do.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:A06 checkpoint: Audit AI-assisted coding before payers do
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:A05-due@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20270331T080300
+DURATION:PT15M
+SUMMARY:A05 due: Help Medicaid patients document work hours and exemptions
+DESCRIPTION:Ask your agent: run the medicaid-coverage-guard skill (healthcare-2027-autopilot). Due today: Help Medicaid patients document work hours and exemptions.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:A05 due: Help Medicaid patients document work hours and exemptions
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:A06-due@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20270331T080300
+DURATION:PT15M
+SUMMARY:A06 due: Audit AI-assisted coding before payers do
+DESCRIPTION:Ask your agent: run the coding-integrity-audit skill (healthcare-2027-autopilot). Due today: Audit AI-assisted coding before payers do.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:A06 due: Audit AI-assisted coding before payers do
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hipaa-security-rule-prep@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20270402T073100
+DURATION:PT15M
+SUMMARY:Prep: HIPAA Security Rule overhaul: final action targeted
+DESCRIPTION:Ask your agent: run the vendor-resilience skill (healthcare-2027-autopilot). Prepare for: HIPAA Security Rule overhaul: final action targeted. HHS pushed the final rule to July 2027. Proposed provisions (not final) include mandatory encryption\, MFA and asset inventories.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Prep: HIPAA Security Rule overhaul: final action targeted
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:provider-tax-phase-down-prep@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20270603T073100
+DURATION:PT15M
+SUMMARY:Prep: Medicaid provider tax safe harbor begins phasing down (FFY 2028)
+DESCRIPTION:Ask your agent: run the financing-cliff-2028 skill (healthcare-2027-autopilot). Prepare for: Medicaid provider tax safe harbor begins phasing down (FFY 2028). Expansion states step down from 6% toward 3.5%. Nursing homes and ICFs are exempt from the phase-down.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Prep: Medicaid provider tax safe harbor begins phasing down (FFY 2028)
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:A07-checkpoint@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20270616T080300
+DURATION:PT15M
+SUMMARY:A07 checkpoint: Move eligible imaging\, infusion and procedures to office or ASC settings
+DESCRIPTION:Ask your agent: run the action-tracker skill (healthcare-2027-autopilot). Two weeks out: Move eligible imaging\, infusion and procedures to office or ASC settings.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:A07 checkpoint: Move eligible imaging\, infusion and procedures to office or ASC settings
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:A08-checkpoint@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20270616T080300
+DURATION:PT15M
+SUMMARY:A08 checkpoint: Inventory vendors holding PHI and test downtime and claims backup
+DESCRIPTION:Ask your agent: run the action-tracker skill (healthcare-2027-autopilot). Two weeks out: Inventory vendors holding PHI and test downtime and claims backup.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:A08 checkpoint: Inventory vendors holding PHI and test downtime and claims backup
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:A07-due@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20270630T080300
+DURATION:PT15M
+SUMMARY:A07 due: Move eligible imaging\, infusion and procedures to office or ASC settings
+DESCRIPTION:Ask your agent: run the site-of-care-shift skill (healthcare-2027-autopilot). Due today: Move eligible imaging\, infusion and procedures to office or ASC settings.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:A07 due: Move eligible imaging\, infusion and procedures to office or ASC settings
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:A08-due@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20270630T080300
+DURATION:PT15M
+SUMMARY:A08 due: Inventory vendors holding PHI and test downtime and claims backup
+DESCRIPTION:Ask your agent: run the vendor-resilience skill (healthcare-2027-autopilot). Due today: Inventory vendors holding PHI and test downtime and claims backup.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:A08 due: Inventory vendors holding PHI and test downtime and claims backup
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cy2028-proposed-rules-prep@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20270701T073100
+DURATION:PT15M
+SUMMARY:Prep: CY 2028 proposed physician and outpatient rules (expected)
+DESCRIPTION:Ask your agent: run the downside-case-model skill (healthcare-2027-autopilot). Prepare for: CY 2028 proposed physician and outpatient rules (expected). In 2026 CMS released the proposed outpatient rule on July 2 and the physician rule on July 14. Expect the 2028 versions in early to mid July 2027.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Prep: CY 2028 proposed physician and outpatient rules (expected)
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hipaa-security-rule-day-of@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20270701T073100
+DURATION:PT15M
+SUMMARY:Day of: HIPAA Security Rule overhaul: final action targeted
+DESCRIPTION:Ask your agent: run the policy-radar skill (healthcare-2027-autopilot). Confirm what happened: HIPAA Security Rule overhaul: final action targeted\, and update assumptions and the tracker.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Day of: HIPAA Security Rule overhaul: final action targeted
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sdp-phase-down-prep@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20270705T073100
+DURATION:PT15M
+SUMMARY:Prep: State-directed payment phase-down begins
+DESCRIPTION:Ask your agent: run the financing-cliff-2028 skill (healthcare-2027-autopilot). Prepare for: State-directed payment phase-down begins. Payments above 100% of Medicare (expansion states) or 110% (non-expansion) fall 10 percentage points a year. First-year federal cut estimated at $8.7 billion.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Prep: State-directed payment phase-down begins
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cy2028-proposed-rules-day-of@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20270715T073100
+DURATION:PT15M
+SUMMARY:Day of: CY 2028 proposed physician and outpatient rules (expected)
+DESCRIPTION:Ask your agent: run the policy-radar skill (healthcare-2027-autopilot). Confirm what happened: CY 2028 proposed physician and outpatient rules (expected)\, and update assumptions and the tracker.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Day of: CY 2028 proposed physician and outpatient rules (expected)
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:A10-checkpoint@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20270916T080300
+DURATION:PT15M
+SUMMARY:A10 checkpoint: Model provider tax and state-directed payment exposure for 2028
+DESCRIPTION:Ask your agent: run the action-tracker skill (healthcare-2027-autopilot). Two weeks out: Model provider tax and state-directed payment exposure for 2028.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:A10 checkpoint: Model provider tax and state-directed payment exposure for 2028
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:A10-due@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20270930T080300
+DURATION:PT15M
+SUMMARY:A10 due: Model provider tax and state-directed payment exposure for 2028
+DESCRIPTION:Ask your agent: run the financing-cliff-2028 skill (healthcare-2027-autopilot). Due today: Model provider tax and state-directed payment exposure for 2028.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:A10 due: Model provider tax and state-directed payment exposure for 2028
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:provider-tax-phase-down-day-of@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20271001T073100
+DURATION:PT15M
+SUMMARY:Day of: Medicaid provider tax safe harbor begins phasing down (FFY 2028)
+DESCRIPTION:Ask your agent: run the policy-radar skill (healthcare-2027-autopilot). Confirm what happened: Medicaid provider tax safe harbor begins phasing down (FFY 2028)\, and update assumptions and the tracker.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Day of: Medicaid provider tax safe harbor begins phasing down (FFY 2028)
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cy2028-final-rules-prep@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20271029T073100
+DURATION:PT15M
+SUMMARY:Prep: CY 2028 final physician and outpatient rules (expected)
+DESCRIPTION:Ask your agent: run the downside-case-model skill (healthcare-2027-autopilot). Prepare for: CY 2028 final physician and outpatient rules (expected). The 2027 final rules were released November 4\, 2026. Expect 2028 finals in early November 2027.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Prep: CY 2028 final physician and outpatient rules (expected)
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cy2028-final-rules-day-of@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20271105T073100
+DURATION:PT15M
+SUMMARY:Day of: CY 2028 final physician and outpatient rules (expected)
+DESCRIPTION:Ask your agent: run the policy-radar skill (healthcare-2027-autopilot). Confirm what happened: CY 2028 final physician and outpatient rules (expected)\, and update assumptions and the tracker.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Day of: CY 2028 final physician and outpatient rules (expected)
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sdp-phase-down-day-of@healthcare-2027-autopilot
+DTSTAMP:20261116T195710Z
+DTSTART;TZID=America/New_York:20280103T073100
+DURATION:PT15M
+SUMMARY:Day of: State-directed payment phase-down begins
+DESCRIPTION:Ask your agent: run the policy-radar skill (healthcare-2027-autopilot). Confirm what happened: State-directed payment phase-down begins\, and update assumptions and the tracker.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Day of: State-directed payment phase-down begins
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

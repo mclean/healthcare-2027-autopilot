@@ -1,0 +1,87 @@
+{
+  "run": "2026-11-16",
+  "month": "2026-10",
+  "baseline": "2026-06",
+  "fired": [
+    {
+      "kpi": "self_pay_share",
+      "name": "Self-pay share of visits",
+      "value": 3.8,
+      "baseline": 2.1,
+      "why": "+1.7 pts vs baseline",
+      "meaning": "Former Medicaid and exchange patients arriving uninsured.",
+      "fires": [
+        "medicaid-coverage-guard",
+        "point-of-service-collections"
+      ],
+      "month": "2026-10",
+      "confidence": "B"
+    },
+    {
+      "kpi": "eligibility_denial_rate",
+      "name": "Coverage-related denial rate",
+      "value": 2.6,
+      "baseline": 1.2,
+      "why": "2.6 vs limit 2",
+      "meaning": "Eligibility checked too early, too rarely or not at all.",
+      "fires": [
+        "medicaid-coverage-guard"
+      ],
+      "month": "2026-10",
+      "confidence": "B"
+    },
+    {
+      "kpi": "pos_collection_rate",
+      "name": "Point-of-service collection rate",
+      "value": 64.0,
+      "baseline": 67.0,
+      "why": "64 vs floor 70",
+      "meaning": "Balances that leave the building unpaid become bad debt at a much higher rate.",
+      "fires": [
+        "point-of-service-collections"
+      ],
+      "month": "2026-10",
+      "confidence": "C"
+    },
+    {
+      "kpi": "bad_debt_charity_pct",
+      "name": "Bad debt plus charity, % of gross revenue",
+      "value": 3.6,
+      "baseline": 3.1,
+      "why": "+16% vs baseline",
+      "meaning": "The lagging confirmation of churn and collection gaps.",
+      "fires": [
+        "point-of-service-collections",
+        "downside-case-model"
+      ],
+      "month": "2026-10",
+      "confidence": "B"
+    },
+    {
+      "kpi": "contracts_in_window_unprepped",
+      "name": "Contracts inside their notice window without a prep file",
+      "value": 2.0,
+      "baseline": 0.0,
+      "why": "2 vs limit 0",
+      "meaning": "The leverage moment is passing.",
+      "fires": [
+        "contract-renewal-radar"
+      ],
+      "month": "2026-10",
+      "confidence": "C"
+    },
+    {
+      "kpi": "cash_critical_vendors_untested",
+      "name": "Cash-critical vendors without a tested backup",
+      "value": 3.0,
+      "baseline": 3.0,
+      "why": "3 vs limit 0",
+      "meaning": "One outage away from a cash stoppage.",
+      "fires": [
+        "vendor-resilience"
+      ],
+      "month": "2026-10",
+      "confidence": "C"
+    }
+  ]
+}

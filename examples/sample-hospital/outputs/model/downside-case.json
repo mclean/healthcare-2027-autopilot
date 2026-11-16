@@ -1,0 +1,127 @@
+{
+  "run": "2026-11-16",
+  "confidence": "D",
+  "mix_source": "archetype default mix (tier D, directional)",
+  "results": {
+    "base": {
+      "scenario": "base",
+      "steps": [
+        [
+          "Medicaid churn",
+          -724464.0
+        ],
+        [
+          "Exchange to self-pay",
+          -858624.0
+        ],
+        [
+          "Medicare fee schedule",
+          -2810808.0
+        ],
+        [
+          "Commercial renewals",
+          524160.0000000001
+        ]
+      ],
+      "revenue_2026": 312000000.0,
+      "revenue_2027": 308130264.0,
+      "opex_2027": 316160000.0,
+      "ebitda_2026": 8000000.0,
+      "ebitda_2027": -8029736.0
+    },
+    "downside": {
+      "scenario": "downside",
+      "steps": [
+        [
+          "Medicaid churn",
+          -3015792.0
+        ],
+        [
+          "Exchange to self-pay",
+          -1382238.0
+        ],
+        [
+          "Medicare fee schedule",
+          -3027024.0
+        ],
+        [
+          "Commercial renewals",
+          0.0
+        ]
+      ],
+      "revenue_2026": 312000000.0,
+      "revenue_2027": 304574946.0,
+      "opex_2027": 319200000.0,
+      "ebitda_2026": 8000000.0,
+      "ebitda_2027": -14625054.0
+    },
+    "severe": {
+      "scenario": "severe",
+      "steps": [
+        [
+          "Medicaid churn",
+          -4568335.2
+        ],
+        [
+          "Exchange to self-pay",
+          -1983696.0
+        ],
+        [
+          "Medicare fee schedule",
+          -3243240.0
+        ],
+        [
+          "Commercial renewals",
+          -349440.00000000006
+        ]
+      ],
+      "revenue_2026": 312000000.0,
+      "revenue_2027": 301855288.8,
+      "opex_2027": 322240000.0,
+      "ebitda_2026": 8000000.0,
+      "ebitda_2027": -20384711.199999988
+    }
+  },
+  "sensitivity": [
+    [
+      "opex_growth",
+      7600000.0
+    ],
+    [
+      "medicaid_subject_share",
+      1507896.0
+    ],
+    [
+      "medicaid_disenroll_rate",
+      1507896.0
+    ],
+    [
+      "exchange_volume_loss",
+      691119.0
+    ],
+    [
+      "exchange_losers_uninsured",
+      691119.0
+    ],
+    [
+      "ma_share_tied_to_pfs",
+      432432.0
+    ],
+    [
+      "self_pay_collection_rate",
+      257985.0
+    ],
+    [
+      "uninsured_utilization_drop",
+      110565.0
+    ],
+    [
+      "commercial_share_renewing",
+      0
+    ],
+    [
+      "commercial_renewal_change",
+      0
+    ]
+  ]
+}

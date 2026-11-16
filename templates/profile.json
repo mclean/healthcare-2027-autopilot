@@ -1,0 +1,22 @@
+{
+  "org_name": "",
+  "archetype": "physician-group",
+  "leader": {"role": "", "timezone": "America/Chicago"},
+  "states": [],
+  "bills_medicare_part_b": true,
+  "hospital_outpatient": false,
+  "receives_supplemental_payments": false,
+  "apm_qualifying": false,
+  "financials": {"net_revenue_2026": 0, "operating_expense_2026": 0, "cash_on_hand": 0},
+  "deal_pipeline": [],
+  "data_tiers": {},
+  "infrastructure": {
+    "scheduler": "claude-scheduled-tasks",
+    "state_store": "connected-folder",
+    "state_store_label": "",
+    "delivery": ""
+  },
+  "kpi_baseline_period": "",
+  "kpi_overrides": {},
+  "schedule_overrides": {}
+}

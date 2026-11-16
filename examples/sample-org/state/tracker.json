@@ -1,0 +1,273 @@
+{
+  "created": "2026-11-09",
+  "items": [
+    {
+      "id": "A00",
+      "title": "Set up the readiness program: profile, data tiers, schedule",
+      "skill": "readiness-setup",
+      "owner_role": "Chief of staff or COO",
+      "owner": "Chief of staff",
+      "due": "2026-11-30",
+      "depends_on": [],
+      "data": [
+        "D18"
+      ],
+      "done_when": "profile.json saved, data readiness map produced, recurring jobs scheduled and the first weekly brief delivered",
+      "protects_against": "Running the year on memory instead of a system",
+      "status": "done",
+      "decision_needed": "",
+      "evidence": [],
+      "history": [
+        {
+          "date": "2026-11-12",
+          "status": "done",
+          "note": "Profile, data tiers and schedule set up; first brief delivered"
+        }
+      ],
+      "derived": "done"
+    },
+    {
+      "id": "A01",
+      "title": "Run a 2027 downside case by payer",
+      "skill": "downside-case-model",
+      "owner_role": "CFO",
+      "owner": "CFO",
+      "due": "2026-12-31",
+      "depends_on": [
+        "A00"
+      ],
+      "data": [
+        "D01",
+        "D02",
+        "D03",
+        "D04",
+        "D05",
+        "D07"
+      ],
+      "done_when": "Base, downside and severe scenarios reviewed by the CFO, with cash runway and the trigger points that move the organization from base to downside",
+      "protects_against": "A cash shortfall nobody modeled",
+      "status": "on_track",
+      "decision_needed": "",
+      "evidence": [],
+      "history": [
+        {
+          "date": "2026-11-13",
+          "status": "on_track",
+          "note": "Base and downside run; severe case review with CFO on Dec 4"
+        }
+      ],
+      "derived": "on_track",
+      "blockers": []
+    },
+    {
+      "id": "A02",
+      "title": "List every commercial contract renewing in 2027 with escalator and notice dates",
+      "skill": "contract-renewal-radar",
+      "owner_role": "VP managed care or CFO",
+      "owner": "VP managed care",
+      "due": "2026-12-31",
+      "depends_on": [
+        "A00"
+      ],
+      "data": [
+        "D06"
+      ],
+      "done_when": "Every commercial contract has a notice deadline, an escalator and a negotiation-prep start date on the schedule",
+      "protects_against": "Flat or negative renewals and missed notice windows",
+      "status": "at_risk",
+      "decision_needed": "",
+      "evidence": [],
+      "history": [
+        {
+          "date": "2026-11-16",
+          "status": "at_risk",
+          "note": "Two contracts have no confirmed notice date; payer reps contacted"
+        }
+      ],
+      "derived": "at_risk",
+      "blockers": []
+    },
+    {
+      "id": "A03",
+      "title": "Re-verify eligibility at every visit and flag expansion adults due for six-month renewal",
+      "skill": "medicaid-coverage-guard",
+      "owner_role": "Revenue cycle director",
+      "owner": "Revenue cycle director",
+      "due": "2027-01-01",
+      "depends_on": [
+        "A00"
+      ],
+      "data": [
+        "D02",
+        "D16",
+        "D17"
+      ],
+      "done_when": "Eligibility runs before every visit, expansion adults are flagged, and a weekly coverage-churn worklist exists",
+      "protects_against": "Retroactive eligibility denials and surprise self-pay",
+      "status": "on_track",
+      "decision_needed": "",
+      "evidence": [],
+      "history": [
+        {
+          "date": "2026-11-14",
+          "status": "on_track",
+          "note": "Batch 270/271 at 72 hours live at 6 of 9 sites"
+        }
+      ],
+      "derived": "on_track",
+      "blockers": []
+    },
+    {
+      "id": "A04",
+      "title": "Give price estimates, collect at time of service, offer payment plans",
+      "skill": "point-of-service-collections",
+      "owner_role": "Revenue cycle director",
+      "owner": "",
+      "due": "2027-01-31",
+      "depends_on": [
+        "A03"
+      ],
+      "data": [
+        "D07",
+        "D08"
+      ],
+      "done_when": "Estimate, collection and payment-plan scripts are live, the financial assistance policy is updated, and the POS collection rate is tracked weekly",
+      "protects_against": "Bad debt",
+      "status": "not_started",
+      "decision_needed": "",
+      "evidence": [],
+      "history": [],
+      "derived": "not_started",
+      "blockers": []
+    },
+    {
+      "id": "A05",
+      "title": "Help Medicaid patients document work hours and exemptions",
+      "skill": "medicaid-coverage-guard",
+      "owner_role": "Patient access or care management lead",
+      "owner": "",
+      "due": "2027-03-31",
+      "depends_on": [
+        "A03"
+      ],
+      "data": [
+        "D02"
+      ],
+      "done_when": "At-risk patients receive outreach, exemption screening is part of intake, and diagnosis documentation supports frailty exemptions where accurate",
+      "protects_against": "Avoidable coverage loss",
+      "status": "not_started",
+      "decision_needed": "",
+      "evidence": [],
+      "history": [],
+      "derived": "not_started",
+      "blockers": []
+    },
+    {
+      "id": "A06",
+      "title": "Audit AI-assisted coding before payers do",
+      "skill": "coding-integrity-audit",
+      "owner_role": "Compliance officer",
+      "owner": "",
+      "due": "2027-03-31",
+      "depends_on": [
+        "A00"
+      ],
+      "data": [
+        "D09",
+        "D10"
+      ],
+      "done_when": "E/M distribution by provider compared to baseline and benchmark, probe sample reviewed, findings and corrective actions documented",
+      "protects_against": "Clawbacks and payer audits",
+      "status": "not_started",
+      "decision_needed": "",
+      "evidence": [],
+      "history": [],
+      "derived": "not_started",
+      "blockers": []
+    },
+    {
+      "id": "A07",
+      "title": "Move eligible imaging, infusion and procedures to office or ASC settings",
+      "skill": "site-of-care-shift",
+      "owner_role": "COO or strategy lead",
+      "owner": "",
+      "due": "2027-06-30",
+      "depends_on": [
+        "A01"
+      ],
+      "data": [
+        "D04",
+        "D05"
+      ],
+      "done_when": "Each candidate service has a margin comparison by site and a go or no-go decision with an owner",
+      "protects_against": "Site-neutral and outpatient department cuts",
+      "status": "not_started",
+      "decision_needed": "",
+      "evidence": [],
+      "history": [],
+      "derived": "not_started",
+      "blockers": []
+    },
+    {
+      "id": "A08",
+      "title": "Inventory vendors holding PHI and test downtime and claims backup",
+      "skill": "vendor-resilience",
+      "owner_role": "CIO or CISO",
+      "owner": "CIO",
+      "due": "2027-06-30",
+      "depends_on": [
+        "A00"
+      ],
+      "data": [
+        "D11"
+      ],
+      "done_when": "Cash-critical vendors identified, BAAs confirmed, a backup clearinghouse path exists and a downtime tabletop has been run",
+      "protects_against": "A vendor breach that stops cash",
+      "status": "blocked",
+      "decision_needed": "Approve a secondary clearinghouse contract (about 6 weeks to stand up)",
+      "evidence": [],
+      "history": [
+        {
+          "date": "2026-11-14",
+          "status": "blocked",
+          "note": "Vendor list waiting on IT asset export"
+        }
+      ],
+      "derived": "blocked",
+      "blockers": []
+    },
+    {
+      "id": "A09",
+      "title": "Add state notice periods to any 2027 deal timeline and clean up MSO and PC governance",
+      "skill": "deal-readiness",
+      "owner_role": "CEO or general counsel",
+      "owner": "General counsel",
+      "due": "2026-12-01",
+      "depends_on": [
+        "A00"
+      ],
+      "data": [
+        "D12"
+      ],
+      "done_when": "Every live deal has a state-by-state notice map, a dated filing plan and a governance checklist reviewed by counsel",
+      "protects_against": "Delayed or conditioned closings",
+      "status": "at_risk",
+      "decision_needed": "Confirm Birch close date or move it to keep the Indiana notice window",
+      "evidence": [],
+      "history": [
+        {
+          "date": "2026-11-16",
+          "status": "at_risk",
+          "note": "Project Birch (IN) closes Mar 31; Indiana needs 90 days' notice, so filing by Dec 31"
+        }
+      ],
+      "derived": "at_risk",
+      "blockers": []
+    }
+  ],
+  "critical_path": [
+    "A01",
+    "A07"
+  ],
+  "reported": "2026-11-16"
+}

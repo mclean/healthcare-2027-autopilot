@@ -1,0 +1,175 @@
+{
+  "as_of": "2026-11-16",
+  "note": "Dates verified against the linked sources on the as_of date. 'expected' dates are projections from the prior year's timing and must be confirmed by policy-radar before they drive an action.",
+  "events": [
+    {
+      "id": "medicaid-work-requirements",
+      "date": "2027-01-01",
+      "title": "Medicaid work requirements begin in 44 states",
+      "detail": "Expansion adults ages 19 to 64 must report 80 hours a month of qualifying activity. About 30% of Medicaid beneficiaries are subject. Excluded states: WY, TX, KS, MS, AL, FL, SC.",
+      "applies_if": {"medicaid_expansion_state": true},
+      "status": "final",
+      "lead_days": 45,
+      "actions": ["A03", "A05"],
+      "source": {"name": "Morgan Lewis", "url": "https://www.morganlewis.com/pubs/2026/11/medicaid-work-requirements-remain-on-track-despite-partial-vacatur", "credibility": 4}
+    },
+    {
+      "id": "six-month-redeterminations",
+      "date": "2027-01-01",
+      "title": "Six-month eligibility renewals for expansion adults",
+      "detail": "Expansion adults are redetermined every six months instead of annually, doubling the number of points where coverage can lapse.",
+      "applies_if": {"medicaid_expansion_state": true},
+      "status": "final",
+      "lead_days": 45,
+      "actions": ["A03"],
+      "source": {"name": "Mondaq (implementation milestones)", "url": "https://www.mondaq.com/unitedstates/healthcare/1668142/medicaid-work-reporting-requirements-implementation-planning-milestones", "credibility": 3}
+    },
+    {
+      "id": "hold-harmless-window",
+      "date": "2027-01-01",
+      "end_date": "2027-06-30",
+      "title": "Optional CMS hold-harmless period on work-requirement disenrollments",
+      "detail": "States that elect it must still assess compliance from January 1 but cannot deny or disenroll solely for failing the requirement until June 30, 2027. Which states elect it changes when coverage losses hit cash.",
+      "applies_if": {"medicaid_expansion_state": true},
+      "status": "optional per state",
+      "lead_days": 30,
+      "actions": ["A01", "A03"],
+      "source": {"name": "Morgan Lewis", "url": "https://www.morganlewis.com/pubs/2026/11/medicaid-work-requirements-remain-on-track-despite-partial-vacatur", "credibility": 4}
+    },
+    {
+      "id": "pfs-2027",
+      "date": "2027-01-01",
+      "title": "2027 Medicare physician fee schedule takes effect",
+      "detail": "Conversion factor $32.63 for non-qualifying APM clinicians (-2.31%) and $32.95 for qualifying APM participants (-1.83%).",
+      "applies_if": {"bills_medicare_part_b": true},
+      "status": "final",
+      "lead_days": 60,
+      "actions": ["A01", "A07"],
+      "source": {"name": "AAMC", "url": "https://www.aamc.org/advocacy-policy/washington-highlights/cms-releases-cy27-medicare-physician-fee-schedule-and-quality-payment-program-final-rule", "credibility": 4}
+    },
+    {
+      "id": "opps-2027",
+      "date": "2027-01-01",
+      "title": "2027 outpatient (OPPS/ASC) rule takes effect",
+      "detail": "2.3% base update for hospitals meeting quality reporting, 340B drug payment cut (about $4.35 billion first-year Medicare savings), site-neutral pay extended to off-campus imaging without contrast (about $260 million in 2027; rural sole community hospitals exempt).",
+      "applies_if": {"hospital_outpatient": true},
+      "status": "final",
+      "lead_days": 60,
+      "actions": ["A01", "A07"],
+      "source": {"name": "BakerHostetler", "url": "https://www.bakerlaw.com/insights/cms-releases-the-2027-hospital-outpatient-prospective-payment-system-and-ambulatory-surgical-center-final-rule/", "credibility": 4}
+    },
+    {
+      "id": "il-hb5000",
+      "date": "2027-01-01",
+      "title": "Illinois HB 5000 transaction notice law effective",
+      "detail": "Notice requirement covers transactions above the facility level and expressly includes private equity companies.",
+      "applies_if": {"states_any": ["IL"]},
+      "status": "final",
+      "lead_days": 30,
+      "actions": ["A09"],
+      "source": {"name": "PESP 2026 State Healthcare Policy Review", "url": "https://pestakeholder.org/wp-content/uploads/2026/09/PESP_Report_State-Healthcare-Policy_2026.pdf", "credibility": 3}
+    },
+    {
+      "id": "ca-hsr-parallel-notice",
+      "date": "2027-01-01",
+      "title": "California parallel HSR notice to the Attorney General",
+      "detail": "HSR filers must give parallel notice to the California AG when nexus thresholds are met.",
+      "applies_if": {"states_any": ["CA"]},
+      "status": "final",
+      "lead_days": 30,
+      "actions": ["A09"],
+      "source": {"name": "McDermott Will & Schulte", "url": "https://www.mcdermottlaw.com/insights/state-of-the-states-avoiding-healthcare-transaction-pitfalls-2026/", "credibility": 4}
+    },
+    {
+      "id": "vt-pe-reports",
+      "date": "2027-03-01",
+      "title": "Vermont private equity and hedge fund ownership reports due",
+      "detail": "Reports cover interests held as of June 1, 2026 (H.583 / Act 133).",
+      "applies_if": {"states_any": ["VT"]},
+      "status": "final",
+      "lead_days": 45,
+      "actions": ["A09"],
+      "source": {"name": "PESP 2026 State Healthcare Policy Review", "url": "https://pestakeholder.org/wp-content/uploads/2026/09/PESP_Report_State-Healthcare-Policy_2026.pdf", "credibility": 3}
+    },
+    {
+      "id": "il-hb4728",
+      "date": "2027-07-01",
+      "title": "Illinois HB 4728 disclosures start for developmental disability providers",
+      "detail": "Quarterly disclosures and 90 days' notice of certain transactions. Penalties up to $50,000.",
+      "applies_if": {"states_any": ["IL"], "segments_any": ["outpatient-services"]},
+      "status": "final",
+      "lead_days": 60,
+      "actions": ["A09"],
+      "source": {"name": "PESP 2026 State Healthcare Policy Review", "url": "https://pestakeholder.org/wp-content/uploads/2026/09/PESP_Report_State-Healthcare-Policy_2026.pdf", "credibility": 3}
+    },
+    {
+      "id": "hipaa-security-rule",
+      "date": "2027-07-01",
+      "date_precision": "month",
+      "title": "HIPAA Security Rule overhaul: final action targeted",
+      "detail": "HHS pushed the final rule to July 2027. Proposed provisions (not final) include mandatory encryption, MFA and asset inventories.",
+      "applies_if": {},
+      "status": "targeted",
+      "lead_days": 90,
+      "actions": ["A08"],
+      "source": {"name": "Fierce Healthcare", "url": "https://www.fiercehealthcare.com/health-tech/feds-push-back-hipaa-security-rule-overhaul-july-2027", "credibility": 4}
+    },
+    {
+      "id": "cy2028-proposed-rules",
+      "date": "2027-07-15",
+      "date_precision": "expected",
+      "title": "CY 2028 proposed physician and outpatient rules (expected)",
+      "detail": "In 2026 CMS released the proposed outpatient rule on July 2 and the physician rule on July 14. Expect the 2028 versions in early to mid July 2027.",
+      "applies_if": {},
+      "status": "expected",
+      "lead_days": 14,
+      "actions": ["A01", "A07"],
+      "source": {"name": "AAMC (2027 proposed rule timing)", "url": "https://www.aamc.org/advocacy-policy/washington-highlights/cms-releases-cy27-medicare-physician-fee-schedule-proposed-rule", "credibility": 4}
+    },
+    {
+      "id": "provider-tax-phase-down",
+      "date": "2027-10-01",
+      "title": "Medicaid provider tax safe harbor begins phasing down (FFY 2028)",
+      "detail": "Expansion states step down from 6% toward 3.5%. Nursing homes and ICFs are exempt from the phase-down.",
+      "applies_if": {"medicaid_expansion_state": true, "receives_supplemental_payments": true},
+      "status": "final",
+      "lead_days": 120,
+      "actions": ["A10"],
+      "source": {"name": "CLA", "url": "https://www.claconnect.com/en/resources/articles/26/obbba-for-providers", "credibility": 4}
+    },
+    {
+      "id": "cy2028-final-rules",
+      "date": "2027-11-05",
+      "date_precision": "expected",
+      "title": "CY 2028 final physician and outpatient rules (expected)",
+      "detail": "The 2027 final rules were released November 4, 2026. Expect 2028 finals in early November 2027.",
+      "applies_if": {},
+      "status": "expected",
+      "lead_days": 7,
+      "actions": ["A01"],
+      "source": {"name": "Medical Economics", "url": "https://www.medicaleconomics.com/view/medicare-s-final-2027-fee-schedule-cuts-physician-pay-more-than-proposed-but-softens-the-same-day-visit-penalty", "credibility": 4}
+    },
+    {
+      "id": "sdp-phase-down",
+      "date": "2028-01-01",
+      "title": "State-directed payment phase-down begins",
+      "detail": "Payments above 100% of Medicare (expansion states) or 110% (non-expansion) fall 10 percentage points a year. First-year federal cut estimated at $8.7 billion.",
+      "applies_if": {"receives_supplemental_payments": true},
+      "status": "final",
+      "lead_days": 180,
+      "actions": ["A10"],
+      "source": {"name": "HFMA", "url": "https://www.hfma.org/fast-finance/sdp-cuts-will-start-with-8-7-billion-in-2028-study/", "credibility": 4}
+    },
+    {
+      "id": "or-sb951-compliance",
+      "date": "2029-01-01",
+      "title": "Oregon SB 951 compliance deadline for most existing MSO arrangements",
+      "detail": "Oregon's corporate practice law limits MSO ownership and control of medical groups. Most existing arrangements have until January 1, 2029.",
+      "applies_if": {"states_any": ["OR"]},
+      "status": "final",
+      "lead_days": 365,
+      "actions": ["A09"],
+      "source": {"name": "PESP 2026 State Healthcare Policy Review", "url": "https://pestakeholder.org/wp-content/uploads/2026/09/PESP_Report_State-Healthcare-Policy_2026.pdf", "credibility": 3}
+    }
+  ]
+}

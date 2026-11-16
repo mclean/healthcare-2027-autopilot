@@ -1,0 +1,8 @@
+Run the `action-tracker` skill from the healthcare-2027-autopilot plugin for Prairie Ridge Specialty Partners (fictional sample).
+Readiness workspace: the connected folder 'Readiness 2027' (profile.json, assumptions.json, inputs/, state/, outputs/).
+Purpose of this run: Two weeks out: Run a 2027 downside case by payer.
+Action in scope: A01 (Run a 2027 downside case by payer). Done when: Base, downside and severe scenarios reviewed by the CFO, with cash runway and the trigger points that move the organization from base to downside.
+Before using any data input, check its tier in profile.json data_tiers. If the tier-A or tier-B source is missing or stale, walk the fallback chain in reference/dependencies.json, use the best available tier, and label every number with its confidence grade.
+Write outputs to the workspace paths listed in the skill. Update state/tracker.json for any action whose status changed.
+Deliver a short summary through: email to the leader through the connected mail app, falling back to a markdown file in outputs/briefs/. If nothing material changed, deliver one line saying so, or nothing if the job is marked deliver-only-if-material.
+Never send messages to anyone other than the leader, never change payer contracts, claims or patient records, and stop to ask before any irreversible step.

@@ -1,0 +1,7 @@
+financial_class,visits,gross_charges,net_revenue
+medicare_ffs,61200,71800000,23500000
+medicare_advantage,33400,38500000,12600000
+medicaid,27900,33100000,10100000
+exchange,10300,12900000,4200000
+commercial,79800,98200000,31900000
+self_pay,5900,6100000,1700000

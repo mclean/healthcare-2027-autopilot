@@ -1,0 +1,9 @@
+payer,product,effective_date,term_months,auto_renew,notice_days,escalator,share_of_net_revenue,termination_without_cause_days,prep_status,owner
+Payer A (national PPO),commercial,2024-04-01,48,yes,120,2.5% fixed annual,0.16,180,,VP managed care
+Payer B (regional Blues),commercial,2023-07-01,48,yes,180,CPI-U capped at 3%,0.08,180,,VP managed care
+Payer C (national HMO),commercial,2025-01-01,24,yes,90,,0.05,120,,VP managed care
+Payer D (Medicare Advantage plan),medicare_advantage,2025-03-01,24,yes,90,100% of Medicare fee schedule,0.06,180,,VP managed care
+Payer E (workers comp network),workers_comp,2022-10-01,12,yes,60,state fee schedule,0.03,90,,Practice administrator
+Payer F (Medicaid managed care),medicaid_mco,2025-06-01,36,yes,,state fee schedule,0.05,,,VP managed care
+Payer G (regional HMO),commercial,2024-11-01,36,yes,,,0.03,,,VP managed care
+Payer H (exchange-only plan),exchange,2026-01-01,12,yes,60,1.5% fixed,0.02,60,,VP managed care

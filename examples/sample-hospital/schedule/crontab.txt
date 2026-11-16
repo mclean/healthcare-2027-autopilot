@@ -1,0 +1,14 @@
+# Tier B fallback: headless agent on a machine that stays on.
+# Requires the Claude CLI with the healthcare-2027-autopilot plugin installed and ANTHROPIC_API_KEY set.
+# cronie and most modern cron daemons honor CRON_TZ; otherwise convert times to the host timezone.
+CRON_TZ=America/New_York
+52 9 8 1,4,7,10 * cd "$HOME/sample-hospital" && claude -p "$(cat schedule/prompts/headless/board-update.txt)" --allowedTools "Read,Write,Edit,Bash(python3:*),WebSearch,WebFetch" >> logs/board-update.log 2>&1
+26 10 15 1,4,7,10 * cd "$HOME/sample-hospital" && claude -p "$(cat schedule/prompts/headless/coding-audit.txt)" --allowedTools "Read,Write,Edit,Bash(python3:*),WebSearch,WebFetch" >> logs/coding-audit.log 2>&1
+17 8 * * 2 cd "$HOME/sample-hospital" && claude -p "$(cat schedule/prompts/headless/contract-watch.txt)" --allowedTools "Read,Write,Edit,Bash(python3:*),WebSearch,WebFetch" >> logs/contract-watch.log 2>&1
+41 16 2 * * cd "$HOME/sample-hospital" && claude -p "$(cat schedule/prompts/headless/data-readiness.txt)" --allowedTools "Read,Write,Edit,Bash(python3:*),WebSearch,WebFetch" >> logs/data-readiness.log 2>&1
+13 7 5 * * cd "$HOME/sample-hospital" && claude -p "$(cat schedule/prompts/headless/kpi-pulse.txt)" --allowedTools "Read,Write,Edit,Bash(python3:*),WebSearch,WebFetch" >> logs/kpi-pulse.log 2>&1
+23 13 * * 4 cd "$HOME/sample-hospital" && claude -p "$(cat schedule/prompts/headless/policy-radar.txt)" --allowedTools "Read,Write,Edit,Bash(python3:*),WebSearch,WebFetch" >> logs/policy-radar.log 2>&1
+37 15 * * 5 cd "$HOME/sample-hospital" && claude -p "$(cat schedule/prompts/headless/tracker-closeout.txt)" --allowedTools "Read,Write,Edit,Bash(python3:*),WebSearch,WebFetch" >> logs/tracker-closeout.log 2>&1
+9 11 20 * * cd "$HOME/sample-hospital" && claude -p "$(cat schedule/prompts/headless/vendor-check.txt)" --allowedTools "Read,Write,Edit,Bash(python3:*),WebSearch,WebFetch" >> logs/vendor-check.log 2>&1
+47 6 * * 1 cd "$HOME/sample-hospital" && claude -p "$(cat schedule/prompts/headless/weekly-brief.txt)" --allowedTools "Read,Write,Edit,Bash(python3:*),WebSearch,WebFetch" >> logs/weekly-brief.log 2>&1
+# One-time jobs: use `at`, or let the weekly brief pick them up from schedule/jobs.json.
