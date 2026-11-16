@@ -2,6 +2,9 @@ name: smoke test
 on:
   push:
   pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
 jobs:
   examples:
     runs-on: ubuntu-latest
@@ -10,6 +13,23 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+      - name: Check manifests, changelog and skill files
+        run: |
+          python3 - <<'EOF'
+          import json, pathlib, re
+          plugin = json.load(open(".claude-plugin/plugin.json"))
+          market = json.load(open(".claude-plugin/marketplace.json"))
+          versions = {plugin["version"]} | {p["version"] for p in market["plugins"]}
+          assert len(versions) == 1, f"plugin.json and marketplace.json disagree on version: {versions}"
+          version = versions.pop()
+          assert f"## [{version}]" in open("CHANGELOG.md").read(), f"CHANGELOG.md has no entry for {version}"
+          skills = sorted(p for p in pathlib.Path("skills").iterdir() if p.is_dir())
+          for skill in skills:
+              text = (skill / "SKILL.md").read_text()
+              assert re.search(rf"^name: {re.escape(skill.name)}$", text, re.M), f"{skill}: frontmatter name missing or does not match the folder"
+              assert re.search(r"^description: \S", text, re.M), f"{skill}: frontmatter description missing"
+          print(f"version {version}, {len(skills)} skills, manifests and changelog agree")
+          EOF
       - name: Regenerate every example output
         run: bash scripts/run_examples.sh
       - name: Rebuild reference guides
@@ -21,3 +41,5 @@ jobs:
           python3 scripts/build_schedule.py --workspace /tmp/ws --today 2026-11-16
           python3 scripts/tracker.py init --workspace /tmp/ws --today 2026-11-16
           python3 scripts/weekly_brief.py --workspace /tmp/ws --today 2026-11-16
+      - name: Build the plugin file
+        run: bash scripts/build_plugin.sh
