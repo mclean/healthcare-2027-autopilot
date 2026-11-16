@@ -34,4 +34,8 @@ The skills follow the common SKILL.md format and the scripts use only the Python
 
 ## How do I update the plugin?
 
-Pull the latest version. Your workspace is separate from the plugin, so updates never touch your profile, data or state. Reference data updates (calendar, state rules) flow in with the plugin; your assumption register keeps your overrides.
+Pull the latest version, or download the newest `.plugin` file from the [releases page](https://github.com/mclean/healthcare-2027-autopilot/releases) and open it in Claude. Your workspace is separate from the plugin, so updates never touch your profile, data or state. Reference data updates (calendar, state rules) flow in with the plugin; your assumption register keeps your overrides. [CHANGELOG.md](../../CHANGELOG.md) lists what changed in each release.
+
+## How do I remove it?
+
+Stop the jobs first, then uninstall. Say "Remove the readiness jobs" and the scheduler lists every task it created and asks before deleting anything. If you used cron, GitHub Actions or calendar reminders instead, delete those entries yourself. Then uninstall the plugin from the `/plugin` menu in Claude Code or from your plugin settings in Claude desktop or web. Your workspace folder stays where it is, so your records survive until you delete it.
