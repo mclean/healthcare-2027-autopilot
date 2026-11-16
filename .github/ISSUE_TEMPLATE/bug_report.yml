@@ -1,0 +1,59 @@
+name: Bug report
+description: A script crashed, a number looks wrong, or a skill did something it should not have.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please do not paste patient information, real financials, contract terms or credentials. Reproduce with the fictional sample workspaces in `examples/`, or describe the shape of your data instead of the data itself.
+
+        Security problems go through [private reporting](https://github.com/mclean/healthcare-2027-autopilot/security/advisories/new), not a public issue.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: Include the error message or the output that looked wrong.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to reproduce
+      description: The prompt or command you ran, and which workspace (sample-org, sample-hospital, or your own).
+      placeholder: python3 scripts/kpi_pulse.py --workspace examples/sample-org --today 2026-11-16
+  - type: input
+    id: component
+    attributes:
+      label: Skill or script involved
+      placeholder: contract-renewal-radar, or scripts/kpi_pulse.py
+  - type: dropdown
+    id: runtime
+    attributes:
+      label: Where it ran
+      options:
+        - Claude Code
+        - Claude desktop or web
+        - Scheduled task in Claude
+        - cron with claude -p
+        - GitHub Actions
+        - Scripts only, no agent
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Plugin version
+      placeholder: "0.1.0"
+  - type: checkboxes
+    id: data-check
+    attributes:
+      label: Data check
+      options:
+        - label: I removed patient data, real financials, contract terms and credentials from this report.
+          required: true

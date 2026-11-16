@@ -1,0 +1,20 @@
+name: Skill or coverage idea
+description: Suggest a new skill, data source, KPI, state or organization type.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve
+      description: Who runs into it, and what do they do about it today?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What you have in mind
+  - type: textarea
+    id: data
+    attributes:
+      label: What data it would need
+      description: Every input here has a fallback. What should happen when this data is missing?

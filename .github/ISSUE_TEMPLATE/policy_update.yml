@@ -1,0 +1,38 @@
+name: Policy or source update
+description: A date, rate, rule or source in reference/ has changed or is wrong.
+labels: ["policy-update"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Assumptions only move when the source scores 4 or higher on the rubric in [`reference/source-scoring.md`](https://github.com/mclean/healthcare-2027-autopilot/blob/main/reference/source-scoring.md). A primary source (the rule, the statute, the agency notice) gets reviewed fastest.
+  - type: textarea
+    id: what-changed
+    attributes:
+      label: What changed
+      placeholder: Indiana extended its transaction notice period from 90 to 120 days.
+    validations:
+      required: true
+  - type: input
+    id: source-url
+    attributes:
+      label: Source link
+    validations:
+      required: true
+  - type: input
+    id: source-date
+    attributes:
+      label: Source publication date
+      placeholder: "2026-11-20"
+    validations:
+      required: true
+  - type: input
+    id: effective-date
+    attributes:
+      label: When the change takes effect
+      placeholder: "2027-07-01"
+  - type: textarea
+    id: affected
+    attributes:
+      label: Files or skills affected, if you know
+      placeholder: reference/state-notice-periods.json, deal-readiness
