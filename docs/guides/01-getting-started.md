@@ -4,7 +4,7 @@ Thirty minutes from install to a running program: a profile, a data map, an acti
 
 ## 1. Install
 
-**Claude (desktop or web, with plugins):** download `healthcare-2027-autopilot.plugin` from the [latest release](https://github.com/mclean/healthcare-2027-autopilot/releases) or build it yourself (`zip -r healthcare-2027-autopilot.plugin . -x ".git/*"`), then open it in Claude and accept the plugin.
+**Claude (desktop or web, with plugins):** download [`dist/healthcare-2027-autopilot.plugin`](../../dist/healthcare-2027-autopilot.plugin) or build it yourself with `bash scripts/build_plugin.sh`, then open it in Claude and accept the plugin.
 
 **Claude Code:**
 

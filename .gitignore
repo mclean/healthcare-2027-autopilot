@@ -4,3 +4,4 @@ __pycache__/
 /readiness/
 /logs/
 *.plugin
+!dist/healthcare-2027-autopilot.plugin

@@ -78,7 +78,7 @@ Three design choices make it work unattended:
 /plugin install healthcare-2027-autopilot@healthcare-2027-autopilot
 ```
 
-**Claude desktop or web:** download `healthcare-2027-autopilot.plugin` from [Releases](https://github.com/mclean/healthcare-2027-autopilot/releases) (or zip this repository) and open it in Claude.
+**Claude desktop or web:** download [`dist/healthcare-2027-autopilot.plugin`](dist/healthcare-2027-autopilot.plugin) (use the download button on that page) and open it in Claude. To build it yourself: `bash scripts/build_plugin.sh`.
 
 Then say: **"Set up the 2027 readiness autopilot."** Full walkthrough: [Getting started](docs/guides/01-getting-started.md).
 
@@ -129,6 +129,7 @@ scripts/            engine scripts (stdlib Python) and run_examples.sh
 templates/          blank inputs and profile
 examples/           fictional sample-org and sample-hospital with every output
 docs/               guides, screenshots, and the tools that build them
+dist/               the installable .plugin file (rebuild with scripts/build_plugin.sh)
 ```
 
 ## Limits
